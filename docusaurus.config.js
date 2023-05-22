@@ -8,11 +8,11 @@ const config = {
   title: 'docusaurus-theme-zen',
   titleDelimiter: '-',
   url: 'https://wrm244.github.io/',//请填写你的网站
-  baseUrl: '/docusaurus-theme-zen/',//建议填写/
+  baseUrl: '/',//建议填写/
   favicon: '/assets/images/social/avatar.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
-  tagline: 'docusaurus的一款美观便捷主题',
+  tagline: 'docusaurus 的一款美观便捷主题',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
