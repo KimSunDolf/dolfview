@@ -7,8 +7,8 @@ const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm2
 const config = {
   title: 'docusaurus-theme-zen',
   titleDelimiter: '-',
-  url: 'https://wrm244.github.io/',//请填写你的网站
-  baseUrl: '/',//建议填写/
+  url: 'https://docs.offshoreview.xyz',//请填写你的网站
+  baseUrl: '/docusaurus-theme-zen/',//建议填写/
   favicon: '/assets/images/social/avatar.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
@@ -79,14 +79,10 @@ const config = {
           ],
         },
         {
-          label: '笔记',
+          label: '帮助中心',
           position: 'left',
           to: 'docs/stack/',
           items: [
-            {
-              label: '本站的搭建',
-              to: 'first-blog',
-            },
             {
               label: '学习栈',
               to: 'docs/stack/',
