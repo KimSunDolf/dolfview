@@ -8,7 +8,7 @@ const config = {
   title: 'docusaurus-theme-zen',
   titleDelimiter: '-',
   url: 'https://docs.offshoreview.xyz',//请填写你的网站
-  baseUrl: '/docusaurus-theme-zen/',//建议填写/
+  baseUrl: '/',//建议填写/
   favicon: 'https://www.offshoreview.xyz/favicon.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
