@@ -17,10 +17,10 @@ const TITLE = translate({
 })
 const DESCRIPTION = translate({
   id: 'theme.project.description',
-  message: '以下项目均由本人开发，均可自由使用，部分开源。',
+  message: '以下项目均为飞鸟服务中的一部分，若其中有你感兴趣的项目，请联系我们预约网络服务。',
 })
 
-const GITHUB_URL = 'https://github.com/wrm244'
+const Contact_URL = ''
 
 type ProjectState = {
   scrollTopPosition: number
@@ -51,12 +51,12 @@ function ShowcaseHeader() {
       <p>{DESCRIPTION}</p>
       <a
         className="button button--primary"
-        href={GITHUB_URL}
+        href={Contact_URL}
         target="_blank"
         rel="noreferrer"
       >
         <Translate id="showcase.header.button">
-          🥰 前往 Github 克隆项目
+          微信：admilk47
         </Translate>
       </a>
     </section>

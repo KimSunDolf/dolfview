@@ -61,33 +61,18 @@ const config = {
       hideOnScroll: false,
       items: [
         {
-          label: '博客',
+          label: '帮助中心',
           position: 'left',
           items: [
             {
-              label: '标签',
-              to: 'tags',
-            },
-            {
-              label: '归档',
-              to: 'archive',
-            },
-            {
-              label: '随笔',
-              to: 'tags/lifestyle',
-            },
-          ],
-        },
-        {
-          label: '帮助中心',
-          position: 'left',
-          to: 'docs/tutorial/intro',
-/*          items: [
-            {
               label: '客户端',
-              to: 'docs/stack/',
+              to: 'docs/tutorial/',
             },
-          ], */
+            {
+              label: '实用工具',
+              to: 'docs/tools/',
+            },            
+          ],
         },
         {
           label: '导航',
@@ -99,6 +84,20 @@ const config = {
           position: 'left',
           to: 'project',
         },
+        {
+          label: '博客',
+          position: 'left',
+          items: [
+            {
+              label: '标签',
+              to: 'tags',
+            },
+            {
+              label: '归档',
+              to: 'archive',
+            },
+          ],
+        },        
         {
           type: 'localeDropdown',
           position: 'right',
@@ -123,16 +122,16 @@ const config = {
           ],
         },
         {
-          title: '学习',
+          title: '常用文档',
           items: [
             {
-              label: '笔记',
+              label: 'macOS',
               to: 'docs/stack',
             },
             {
-              label: '项目',
+              label: 'Windows',
               to: 'project',
-            },
+            },          
           ],
         },
         {

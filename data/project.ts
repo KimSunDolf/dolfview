@@ -1,13 +1,22 @@
 export const projects: Project[] = [
   {
-    title: 'docusaurus-theme-zen',
-    description: '基于Docusaurus v2 主题设计部署个人网站',
-    preview: '/assets/images/project/blog.png',
-    website: 'https://wrm244.github.io/docusaurus-theme-zen',
-    source: 'https://github.com/wrm244/docusaurus-theme-zen',
-    tags: ['opensource', 'design', 'favorite'],
+    title: '飞鸟集网络',
+    description: '跨越世界，力求稳定。',
+    preview: 'https://pan.createvoyage.com/f/Njsj/cover-page.png',
+    website: 'https://www.offshoreview.xyz/',
+    source: 'https://github.com/GeekQuerxy/SSPanel-Malio',
+    tags: ['design', 'favorite'],
     type: 'web',
   },
+  {
+    title: '飞鸟 Chat',
+    description: ' 回答你的一切问题。',
+    preview: 'https://pan.createvoyage.com/f/Ootv/chat-cover.png',
+    website: 'https://ai.offshoreview.xyz/',
+    source: 'https://github.com/Yidadaa/ChatGPT-Next-Web',
+    tags: ['opensource', 'design', 'favorite'],
+    type: 'web',
+  },  
 ]
 
 export type Tag = {

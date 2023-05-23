@@ -25,11 +25,11 @@ const friends: Resource[] = Friends.map(f => {
 
 export const resourceData: ResourceCategory[] = [
   {
-    name: '友链👨‍💻',
+    name: '友链 👨‍💻',
     resources: friends,
   },
   {
-    name: '添加你收藏的站点',
+    name: '收藏的站点',
     resources: [
       {
         name: '动手学深度学习',

@@ -1,11 +1,17 @@
 ---
-id: introduction
-slug: /Stack
-title: README
+id: intro
+slug: /tutorial
+title: 适用范围
 last_update:
-  date: 2023/04/22
+  date: 2023/05/23
 ---
 
-# 这里记录笔记
+# 适用范围
 
-测试
+欢迎使用飞鸟集。飞鸟集专注于魔法上网，旨在让每位麻瓜都能感受到科技的力量。魔法能够在以下设备中进行使用：
+
+- [macOS](/docs/macos)
+- [Windows](/docs/windows)
+- [iOS](/docs/ios)
+- [Android](/docs/android)
+
