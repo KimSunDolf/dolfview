@@ -1,11 +1,11 @@
 export const Friends: Friend[] = [
   {
-    title: '河山的技术存档',
-    description: '计算机研究，编程爱好者',
-    website: 'https://wrm244.gxist.cn',
-    avatar: '/assets/images/friends/avatar.png',
+    title: 'OpenAI',
+    description: '智能先驱缔造者。',
+    website: 'https://chat.openai.com/',
+    avatar: 'https://pan.createvoyage.com/f/QRCo/chatgpt-logo.png',
   },
-  //请按照以上格式提交请求，avatar可以是超链接。
+  //请按照以上格式提交请求，avatar 可以是超链接。
 ]
 
 export type Friend = {

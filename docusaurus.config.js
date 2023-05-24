@@ -1,18 +1,18 @@
 const path = require('path')
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const announcementBarContent = `🎉欢迎浏览<a href="https://github.com/wrm244/docusaurus-theme-zen/" target="_blank">docusaurus-theme-zen</a>`
+const announcementBarContent = `🎉 新用户免费试用三天 <a href="https://www.offshoreview.xyz/auth/register">(需邀请码)</a>`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'docusaurus-theme-zen',
+  title: '飞鸟书',
   titleDelimiter: '-',
-  url: 'https://wrm244.github.io/',//请填写你的网站
-  baseUrl: '/docusaurus-theme-zen/',//建议填写/
-  favicon: '/assets/images/social/avatar.ico',
+  url: 'https://docs.offshoreview.xyz',//请填写你的网站
+  baseUrl: '/',//建议填写/
+  favicon: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
-  tagline: 'docusaurus的一款美观便捷主题',
+  tagline: '飞鸟书',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -52,45 +52,26 @@ const config = {
       },
     },
     navbar: {
-      title: 'docusaurus-theme-zen',
+      title: '飞鸟书',
       logo: {
         alt: 'your name',
-        src: '/assets/images/social/avatar.png',
-        srcDark: '/assets/images/social/avatar.png',//记得加上绝对路径/
+        src: 'https://pan.createvoyage.com/f/74uZ/modified.png',
+        srcDark: 'https://pan.createvoyage.com/f/74uZ/modified.png',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
         {
-          label: '博客',
+          label: '帮助中心',
           position: 'left',
           items: [
             {
-              label: '标签',
-              to: 'tags',
+              label: '客户端',
+              to: 'docs/tutorial/',
             },
             {
-              label: '归档',
-              to: 'archive',
-            },
-            {
-              label: '随笔',
-              to: 'tags/lifestyle',
-            },
-          ],
-        },
-        {
-          label: '笔记',
-          position: 'left',
-          to: 'docs/stack/',
-          items: [
-            {
-              label: '本站的搭建',
-              to: 'first-blog',
-            },
-            {
-              label: '学习栈',
-              to: 'docs/stack/',
-            },
+              label: '实用工具',
+              to: 'docs/tools/',
+            },            
           ],
         },
         {
@@ -103,6 +84,20 @@ const config = {
           position: 'left',
           to: 'project',
         },
+        {
+          label: '博客',
+          position: 'left',
+          items: [
+            {
+              label: '标签',
+              to: 'tags',
+            },
+            {
+              label: '归档',
+              to: 'archive',
+            },
+          ],
+        },        
         {
           type: 'localeDropdown',
           position: 'right',
@@ -127,16 +122,16 @@ const config = {
           ],
         },
         {
-          title: '学习',
+          title: '常用文档',
           items: [
             {
-              label: '笔记',
+              label: 'macOS',
               to: 'docs/stack',
             },
             {
-              label: '项目',
+              label: 'Windows',
               to: 'project',
-            },
+            },          
           ],
         },
         {
@@ -164,12 +159,12 @@ const config = {
               to: 'resource',
             },
             {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="/assets/images/buildwith.png" /></a> <a href="https://www.netlify.com/" target="_blank"><img alt="Built with Netlify" style="height:50px;margin-top:0.5rem" src="/assets/images/netlify-color-accent.svg" /></a>`,
+              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://pan.createvoyage.com/f/KEf4/buildwith.png" /></a>`,
             },
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} docusaurus-theme-zen, 此网站使用 <a href="https://docusaurus.io/zh-CN/" target="_blank">Docusaurus</a> 搭建
+      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集网络, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
       Date("10/16/2022 8:22:00");
