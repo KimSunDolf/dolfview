@@ -5,14 +5,14 @@ const announcementBarContent = `🎉 新用户免费试用三天 <a href="https:
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'docusaurus-theme-zen',
+  title: '飞鸟书',
   titleDelimiter: '-',
   url: 'https://docs.offshoreview.xyz',//请填写你的网站
   baseUrl: '/',//建议填写/
   favicon: 'https://www.offshoreview.xyz/favicon.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
-  tagline: '飞鸟集网络服务',
+  tagline: '飞鸟集文档中心',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -52,7 +52,7 @@ const config = {
       },
     },
     navbar: {
-      title: '飞鸟集',
+      title: '飞鸟书',
       logo: {
         alt: 'your name',
         src: 'https://pan.createvoyage.com/f/GzUA/icon.png',

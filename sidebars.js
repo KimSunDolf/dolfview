@@ -13,7 +13,7 @@ const sidebars = {
       // items: [
 
       // ],
-    },
+    }, 
   ],
   tools: [
     'tools/introduction',
