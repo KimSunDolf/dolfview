@@ -1,23 +1,22 @@
 ---
-id: macos
-slug: /macos
-title: macOS 教程
+id: windows
+slug: /windows
+title: Windows 教程
 last_update:
   date: 2023/05/23
 ---
 
-# macOS 教程
+# Windows 教程
 
 ![](https://pan.createvoyage.com/f/RDF5/macos.png)
 
 ## 前言
 
-macOS 采用的魔法上网方式为通过 Clash 协议实现上网。Clash 又称猫猫头协议，是一种基于 SOCKS5 的代理协议，其特点是可以通过配置文件实现代理规则的自定义，从而实现更加灵活的代理规则。
+Windows 采用的魔法上网方式为通过 Clash 协议实现上网。Clash 又称猫猫头协议，是一种基于 SOCKS5 的代理协议，其特点是可以通过配置文件实现代理规则的自定义，从而实现更加灵活的代理规则。
 
 ## 1. 提供邮箱
 
 在微信中添加 admilk47 并提供邮箱，飞鸟集将会发送激活邮件到您的邮箱中；或者直接点击[此链接](https://www.offshoreview.xyz/auth/register)进行注册。
-
 
 在邮箱中查收飞鸟集激活验证码。只有已激活试用 / 购买的账户才能够获取到节点配置，并且需要将配置导入至 Clash 后才能成功魔法上网，仅仅下载软件是不够的。
 
@@ -29,11 +28,9 @@ macOS 采用的魔法上网方式为通过 Clash 协议实现上网。Clash 又�
 
 首先需要提前下载好 clash 软件。
 
-- 点击[下载链接](https://pan.createvoyage.com/f/gRIG/clash-for-mac.dmg)。
+- 点击[下载链接](https://pan.createvoyage.com/f/jESR/clash-for-windows.exe)。
 
-下载完成后进行安装。如果苹果系统提示打不开，那么就前往“系统偏好设置” → “安全些与隐私” → “通用”中点击“仍要打开”，参考下图：
-
-![](https://pan.createvoyage.com/f/W9ID/still-open.png)
+下载完成后双击打开并安装在本地。
 
 ## 3. 获取订阅链接
 
@@ -62,14 +59,6 @@ Clash 客户端无法识别常规的订阅链接，需要投喂专门的符合 C
 确认选中配置后，前往 General 页，打开 system proxy 按钮就可以开始使用了。
 
 ![](https://pan.createvoyage.com/f/2Bf8/clash-3.png)
-
-:::tip
-⚠️ 首次打开开关后，Port 一栏可能会变为 0，此时需要重启 clash 软件，直到 Port 数字变为 7890 后再重新打开 Proxy。
-:::
-
-重启路径如下：
-
-![](https://pan.createvoyage.com/f/38h2/clash-4.png)
 
 ## 6. 配置代理规则（进阶使用）
 
