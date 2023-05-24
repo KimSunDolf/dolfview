@@ -3,6 +3,9 @@ const sidebars = {
   tutorial: [
     'tutorial/intro',
     'tutorial/macos',
+    'tutorial/windows',
+    'tutorial/ios',
+    'tutorial/android',    
     {
       // label: 'Docusaurus',
       // type: 'category',

@@ -9,10 +9,10 @@ const config = {
   titleDelimiter: '-',
   url: 'https://docs.offshoreview.xyz',//请填写你的网站
   baseUrl: '/',//建议填写/
-  favicon: 'https://www.offshoreview.xyz/favicon.ico',
+  favicon: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
   organizationName: '',
   projectName: 'docusaurus-theme-zen',
-  tagline: '飞鸟集文档中心',
+  tagline: '飞鸟书',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -55,8 +55,8 @@ const config = {
       title: '飞鸟书',
       logo: {
         alt: 'your name',
-        src: 'https://pan.createvoyage.com/f/GzUA/icon.png',
-        srcDark: 'https://pan.createvoyage.com/f/GzUA/icon.png',//记得加上绝对路径/
+        src: 'https://pan.createvoyage.com/f/74uZ/modified.png',
+        srcDark: 'https://pan.createvoyage.com/f/74uZ/modified.png',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
