@@ -5,7 +5,24 @@ const sidebars = {
     'tutorial/macos',
     'tutorial/windows',
     'tutorial/ios',
-    'tutorial/android',    
+    'tutorial/android',
+    {
+      label: '常见问题',
+      type: 'category',
+      link: {
+        type: 'doc',
+        id: 'tutorial/faq/overview'
+      },
+      items: [
+        'tutorial/faq/interesting-outside',
+        'tutorial/faq/manual-import',
+        'tutorial/faq/manual-import',
+        'tutorial/faq/manual-import',
+        'tutorial/faq/manual-import',
+        'tutorial/faq/manual-import',
+      ],
+      collapsed: false,
+    },    
     {
       // label: 'Docusaurus',
       // type: 'category',

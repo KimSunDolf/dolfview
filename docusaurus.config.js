@@ -55,8 +55,8 @@ const config = {
       title: '飞鸟书',
       logo: {
         alt: 'your name',
-        src: 'https://pan.createvoyage.com/f/74uZ/modified.png',
-        srcDark: 'https://pan.createvoyage.com/f/74uZ/modified.png',//记得加上绝对路径/
+        src: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
+        srcDark: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
@@ -75,7 +75,7 @@ const config = {
           ],
         },
         {
-          label: '导航',
+          label: '推荐站点',
           position: 'left',
           to: 'resource',
         },
@@ -151,7 +151,7 @@ const config = {
           title: '更多',
           items: [
             {
-              label: '友链',
+              label: '推荐站点',
               to: 'friends',
             },
             {
@@ -164,7 +164,7 @@ const config = {
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集网络, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
+      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集书, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
       Date("10/16/2022 8:22:00");
@@ -342,6 +342,9 @@ const config = {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
     localeConfigs: {
+      en: {
+        htmlLang: 'zn-CN',
+      },
       en: {
         htmlLang: 'en-GB',
       },

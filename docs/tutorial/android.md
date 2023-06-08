@@ -1,6 +1,6 @@
 ---
 id: android
-slug: /android
+slug: /tutorial/android
 title: Android 教程
 last_update:
   date: 2023/05/24
@@ -14,7 +14,7 @@ last_update:
 
 安卓采用的扶梯方式为通过 clash 协议实现上网。
 
-## 1. 提供邮箱
+## 1. 提供邮箱注册飞鸟集
 
 在微信中添加 admilk47 并提供邮箱，飞鸟集将会发送激活邮件到您的邮箱中；或者直接点击[此链接](https://www.offshoreview.xyz/auth/register)进行注册。
 

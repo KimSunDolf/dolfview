@@ -7,7 +7,7 @@ import { ThemeConfig } from '@docusaurus/preset-classic'
 
 import Link from '@docusaurus/Link'
 
-import HeroMain from './img/javascript_illustration.svg'
+import HeroMain from './img/page-cover-1.svg'
 
 import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
@@ -40,9 +40,9 @@ function Hero() {
     from: { opacity: 0, transform: 'translate3d(0px, 2em, 0px)' },
     to: { opacity: 1, transform: 'translate3d(0px, 0px, 0px)' },
     config: {
-      mass: 3,
-      tension: 460,
-      friction: 45,
+      mass: 5,
+      tension: 300,
+      friction: 40,
     },
   })
 
