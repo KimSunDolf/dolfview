@@ -52,12 +52,12 @@ function Hero() {
         <animated.div style={trails[0]} className={styles.hero_text}>
           <Translate id="homepage.hero.greet">欢迎使用</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">飞鸟书</Translate>
+            <Translate id="homepage.hero.name">道孚站</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`飞鸟书是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的资料集合库。`}
+            {`道孚站是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的资料集合站。`}
           </Translate>
           <br />
           {/* <Translate

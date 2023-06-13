@@ -5,14 +5,14 @@ const announcementBarContent = `🎉 新用户免费试用三天 <a href="https:
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '飞鸟书',
+  title: '道孚站',
   titleDelimiter: '-',
-  url: 'https://docs.offshoreview.xyz',//请填写你的网站
+  url: 'https://wsyfin.com',//请填写你的网站
   baseUrl: '/',//建议填写/
   favicon: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
   organizationName: '',
-  projectName: 'docusaurus-theme-zen',
-  tagline: '飞鸟书',
+  projectName: 'dolf-vew',
+  tagline: '道孚站',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -43,7 +43,7 @@ const config = {
       },
       {
         name: 'keywords',
-        content: ' 编程爱好者',
+        content: '程序 · 观点 · 搞钱',
       },
     ],
     docs: {
@@ -52,16 +52,16 @@ const config = {
       },
     },
     navbar: {
-      title: '飞鸟书',
+      title: '道孚站',
       logo: {
-        alt: 'your name',
+        alt: 'Dolf',
         src: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
         srcDark: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
         {
-          label: '帮助中心',
+          label: '文档中心',
           position: 'left',
           items: [
             {
