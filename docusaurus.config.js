@@ -164,7 +164,7 @@ const config = {
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集书, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
+      copyright: `版权所有 © ${new Date().getFullYear()} 道孚站, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
       Date("10/16/2022 8:22:00");

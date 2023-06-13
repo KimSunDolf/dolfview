@@ -7,7 +7,7 @@ import { ThemeConfig } from '@docusaurus/preset-classic'
 
 import Link from '@docusaurus/Link'
 
-import HeroMain from './img/page-cover-1.svg'
+import HeroMain from './img/cover-4.svg'
 
 import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
