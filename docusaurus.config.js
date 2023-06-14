@@ -5,14 +5,14 @@ const announcementBarContent = `🎉 新用户免费试用三天 <a href="https:
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '飞鸟书',
+  title: '道孚站',
   titleDelimiter: '-',
-  url: 'https://docs.offshoreview.xyz',//请填写你的网站
+  url: 'https://wsyfin.com',//请填写你的网站
   baseUrl: '/',//建议填写/
   favicon: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
   organizationName: '',
-  projectName: 'docusaurus-theme-zen',
-  tagline: '飞鸟书',
+  projectName: 'dolf-vew',
+  tagline: '道孚站',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -43,7 +43,7 @@ const config = {
       },
       {
         name: 'keywords',
-        content: ' 编程爱好者',
+        content: '程序 · 观点 · 搞钱',
       },
     ],
     docs: {
@@ -52,16 +52,16 @@ const config = {
       },
     },
     navbar: {
-      title: '飞鸟书',
+      title: '道孚站',
       logo: {
-        alt: 'your name',
-        src: 'https://pan.createvoyage.com/f/74uZ/modified.png',
-        srcDark: 'https://pan.createvoyage.com/f/74uZ/modified.png',//记得加上绝对路径/
+        alt: 'Dolf',
+        src: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
+        srcDark: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
         {
-          label: '帮助中心',
+          label: '文档中心',
           position: 'left',
           items: [
             {
@@ -75,7 +75,7 @@ const config = {
           ],
         },
         {
-          label: '导航',
+          label: '推荐站点',
           position: 'left',
           to: 'resource',
         },
@@ -151,7 +151,7 @@ const config = {
           title: '更多',
           items: [
             {
-              label: '友链',
+              label: '推荐站点',
               to: 'friends',
             },
             {
@@ -164,7 +164,7 @@ const config = {
           ],
         },
       ],
-      copyright: `版权所有 © ${new Date().getFullYear()} 飞鸟集网络, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
+      copyright: `版权所有 © ${new Date().getFullYear()} 道孚站, 此网站主题基于 <a href="https://github.com/wrm244/docusaurus-theme-zen" target="_blank">Theme-zen</a>  搭建。
       <span id="runtime_span"></span>
       <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
       Date("10/16/2022 8:22:00");
@@ -342,6 +342,9 @@ const config = {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
     localeConfigs: {
+      en: {
+        htmlLang: 'zn-CN',
+      },
       en: {
         htmlLang: 'en-GB',
       },

@@ -1,6 +1,6 @@
 ---
 id: ios
-slug: /ios
+slug: /tutorial/ios
 title: iOS 教程
 last_update:
   date: 2023/05/24
@@ -20,11 +20,11 @@ iOS 设备（iPhone、iPad）共用同一套上网方案，它们都需要下载
 
 ![](https://pan.createvoyage.com/f/lAUX/intro-1.png)
 
-## 1. 提供邮箱
+## 1. 提供邮箱注册飞鸟集
 
 在微信中添加 admilk47 并提供邮箱，飞鸟集将会发送激活邮件到您的邮箱中；或者直接点击[此链接](https://www.offshoreview.xyz/auth/register)进行注册。
 
-在邮箱中查收飞鸟集激活验证码。只有已激活试用 / 购买的账户才能够获取到节点配置，并且需要将配置导入至 Clash 后才能成功魔法上网，仅仅下载软件是不够的。
+在邮箱中查收飞鸟集激活验证码。只有已激活试用 / 购买的账户才能够获取到节点配置，并且需要将配置导入至 App 后才能成功魔法上网，仅仅下载软件是不够的。
 
 验证邮件长这样子 👇：
 

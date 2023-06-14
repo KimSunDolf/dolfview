@@ -7,7 +7,7 @@ import { ThemeConfig } from '@docusaurus/preset-classic'
 
 import Link from '@docusaurus/Link'
 
-import HeroMain from './img/javascript_illustration.svg'
+import HeroMain from './img/cover-4.svg'
 
 import JuejinIcon from '@site/static/svg/juejin.svg'
 import { Icon } from '@iconify/react'
@@ -40,9 +40,9 @@ function Hero() {
     from: { opacity: 0, transform: 'translate3d(0px, 2em, 0px)' },
     to: { opacity: 1, transform: 'translate3d(0px, 0px, 0px)' },
     config: {
-      mass: 3,
-      tension: 460,
-      friction: 45,
+      mass: 5,
+      tension: 300,
+      friction: 40,
     },
   })
 
@@ -52,12 +52,12 @@ function Hero() {
         <animated.div style={trails[0]} className={styles.hero_text}>
           <Translate id="homepage.hero.greet">欢迎使用</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">飞鸟书</Translate>
+            <Translate id="homepage.hero.name">道孚站</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`飞鸟书是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的资料集合库。`}
+            {`道孚站是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的资料集合站。`}
           </Translate>
           <br />
           {/* <Translate

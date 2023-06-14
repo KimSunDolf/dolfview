@@ -1,6 +1,6 @@
 ---
 id: windows
-slug: /windows
+slug: /tutorial/windows
 title: Windows 教程
 last_update:
   date: 2023/05/23
@@ -14,7 +14,7 @@ last_update:
 
 Windows 采用的魔法上网方式为通过 Clash 协议实现上网。Clash 又称猫猫头协议，是一种基于 SOCKS5 的代理协议，其特点是可以通过配置文件实现代理规则的自定义，从而实现更加灵活的代理规则。
 
-## 1. 提供邮箱
+## 1. 提供邮箱注册飞鸟集
 
 在微信中添加 admilk47 并提供邮箱，飞鸟集将会发送激活邮件到您的邮箱中；或者直接点击[此链接](https://www.offshoreview.xyz/auth/register)进行注册。
 
