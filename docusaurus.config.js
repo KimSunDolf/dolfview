@@ -1,7 +1,7 @@
 const path = require('path')
 const math = require('remark-math');
 const katex = require('rehype-katex');
-const announcementBarContent = `🎉 新用户免费试用三天 <a href="https://www.offshoreview.xyz/auth/register">(需邀请码)</a>`
+const announcementBarContent = `🎉 欢迎来到道孚站！ <a href="https://wsyfin.com">  </a>`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
