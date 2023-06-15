@@ -17,7 +17,7 @@ const TITLE = translate({
 })
 const DESCRIPTION = translate({
   id: 'theme.project.description',
-  message: '以下项目均为飞鸟服务中的一部分，若其中有你感兴趣的项目，请联系我们预约网络服务。',
+  message: '以下项目是我发现的有意思项目，若其中有你感兴趣的项目那就更好啦。',
 })
 
 const Contact_URL = ''

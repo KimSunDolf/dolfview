@@ -61,43 +61,47 @@ const config = {
       hideOnScroll: false,
       items: [
         {
-          label: '文档中心',
+          label: '干货记录',
           position: 'left',
           items: [
             {
-              label: '客户端',
-              to: 'docs/tutorial/',
+              label: '技术相关',
+              to: 'docs/useful-records/',
             },
             {
               label: '实用工具',
               to: 'docs/tools/',
+            },
+            {
+              label: 'AI 探索',
+              to: 'docs/ai/',
             },            
           ],
-        },
-        {
-          label: '推荐站点',
-          position: 'left',
-          to: 'resource',
-        },
-        {
-          label: '项目',
-          position: 'left',
-          to: 'project',
         },
         {
           label: '博客',
           position: 'left',
           items: [
             {
-              label: '标签',
+              label: '所有文章',
               to: 'tags',
             },
             {
-              label: '归档',
+              label: '时间线',
               to: 'archive',
             },
           ],
         },        
+        {
+          label: '推荐站点',
+          position: 'left',
+          to: 'resource',
+        },
+        {
+          label: '项目展示',
+          position: 'left',
+          to: 'project',
+        },
         {
           type: 'localeDropdown',
           position: 'right',
@@ -281,7 +285,7 @@ const config = {
         editLocalizedFiles: false,
         blogDescription: 'docusaurus-theme-zen',
         blogSidebarCount: 10,
-        blogSidebarTitle: '最近更新',
+        blogSidebarTitle: '点击标题进行阅读阅读 🔽',
         postsPerPage: 10,
         showReadingTime: true,
         readingTime: ({ content, frontMatter, defaultReadingTime }) =>

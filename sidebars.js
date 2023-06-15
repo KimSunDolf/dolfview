@@ -1,25 +1,30 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorial: [
-    'tutorial/intro',
-    'tutorial/macos',
-    'tutorial/windows',
-    'tutorial/ios',
-    'tutorial/android',
+    'useful-records/intro',
     {
-      label: '常见问题',
+      label: 'Clash 相关',
       type: 'category',
       link: {
         type: 'doc',
-        id: 'tutorial/faq/overview'
+        id: 'useful-records/clash/overview'
       },
       items: [
-        'tutorial/faq/interesting-outside',
-        'tutorial/faq/manual-import',
-        'tutorial/faq/manual-import',
-        'tutorial/faq/manual-import',
-        'tutorial/faq/manual-import',
-        'tutorial/faq/manual-import',
+        'useful-records/clash/setting-up-clash-front-end-dashboard',
+        'useful-records/clash/manual-import',
+      ],
+      collapsed: false,
+    },
+    {
+      label: 'Docker 相关',
+      type: 'category',
+      link: {
+        type: 'doc',
+        id: 'useful-records/docker/introduction'
+      },
+      items: [
+        'useful-records/docker/nginx-proxy-managor',
+        'useful-records/clash/manual-import',
       ],
       collapsed: false,
     },    
@@ -39,12 +44,13 @@ const sidebars = {
     'tools/introduction',
     'tools/everything-quick-search-local-files',
     'tools/wappalyzer-recognize-technology',
-    'tools/windows-custom-right-click-menu',
-    'tools/vscode-config',
-    'tools/idea-config',
-    'tools/vite-plugin',
-    'tools/jetbrains-product-activation-method',
-  ]  
+  ],
+  stack: [
+    'stack/introduction',
+  ],
+  ai: [
+    'ai/scripts-by-gpt',
+  ]
 }
 
 module.exports = sidebars

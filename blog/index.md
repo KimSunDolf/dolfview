@@ -3,7 +3,7 @@ slug: first-blog
 title: 发刊词
 date: 2023-05-22 14:09:58
 tags: [飞鸟集,blog]
-authors: RiverMountain
+authors: Dolf
 ---
 
 ![logo](https://pan.createvoyage.com/f/JWcK/first-blog.jpeg)
