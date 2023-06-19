@@ -6,37 +6,40 @@ last_update:
   date: 2023-06-14 20:48:11
 ---
 
+> 如果你想直接使用 Clash 转码平台，不想知道这里的门道，那不妨直接点击[此处](https://clash.offshoreview.xyz)。
+
+![](https://pan.createvoyage.com/f/685Cy/setting-up-clash-front-end-dashboard-02.png)
+
 ## 前言
 
-网上有太多使用复杂的宝塔面板进行搭建 Clash 前端的教程，但它们基本都是要求通过宝塔面板来进行搭建。但是，这样的教程对于新手来说，虽然可以跟着走，但是依然不够「快」。宝塔得要求一台 VPS 吧？得要求输各种命令吧？
+网上有太多使用复杂的宝塔面板进行搭建 Clash 前端的教程，但它们基本都是要求通过宝塔面板来进行搭建。但是，这样的教程对于新手来说，虽然可以跟着走，但是依然不够「快」。
 
 :::caution
-⚠️ 国内版宝塔还要求输入手机号。
+国内版宝塔还要求输入手机号。
 :::
 
 
 而且，这其实是不符合第一性原理的，我的目的很明确，为什么要额外安装一个我并不需要的服务？
 
-现在我们有了强大的 [Vercel 平台](https://vercel.com/dashboard)，对付一些简单的 Web 服务应用绰绰有余了。我们可以直接使用 GitHub 仓库一键进行部署，仅需要配置一个域名用于前端、拉取一个容器搞定后端就可以了，关键它也是持久免费的。
-
-## 前置条件
-
-- GitHub 账号
-- 少许动手能力
-
-## 背景知识
-
-在开始动手前，我们需要搞清楚这个需求的真正目的是什么。
+现在我们有了强大的 [Vercel 平台](https://vercel.com/dashboard)，对付一些简单的 Web 服务应用绰绰有余了。我们可以直接通过 GitHub 仓库一键进行部署，仅需要配置一个域名用于前端、拉取一个容器搞定后端就可以了，关键它也是持久免费的。
 
 ### 什么是 Clash？
 
 Clash 是一个非常强大的工具，几乎兼容业内的主流协议。可以说，无论你试用的什么协议，**All in Clash**，不需要纠结要下载什么软件，把你手上的配置转码处理后丢给 Clash 就对了。Clash 作为开源软件，几乎席卷所有平台：安卓、iOS、macOS 与 Linux。
 
-### 什么是 Clash 订阅转码平台？
+### 为什么需要搭建 Clash 订阅转码平台？
 
 市面上存在两种订阅类型，一种叫**节点订阅链接**，另一种叫 **Clash 订阅链接**。节点订阅链接只能够被兼容特定协议的软件所识别，同理， Clash 这个工具只认 **Clash 订阅链接**。
 
 常规的**节点订阅链接**并不能够直接在 Clash 上运行，而所有**节点订阅链接**都能够转码为 **Clash 订阅链接**。因此我们需要一个转换平台，虽然市面上已经有许许多多的转换平台，不过为了确保数据与订阅链接信息安全，最好还是自己搭建一个专用的平台。
+
+## 前置条件
+
+- GitHub 账号
+- VPS
+- 在 VPS 上部署 [Nginx Proxy Manager](https://nginxproxymanager.com/)
+- 将域名解析至 VPS，用于定义前端地址
+
 
 ## 开始动手
 
@@ -48,10 +51,165 @@ Clash 是一个非常强大的工具，几乎兼容业内的主流协议。可�
 
 Clash 转换平台主要由前端页面和后端服务构成。前端页面主要由 [sub-web](https://github.com/CareyWang/sub-web) 提供，后端服务可以直接采用 Docker 形式，更加便捷。
 
-### 搭建前端页面
+## 1. 搭建前端页面
 
-来，找到市面上一切转换平台的幕后源头项目，大名鼎鼎的：[CareyWang/sub-web](https://github.com/CareyWang/sub-web)，然后轻轻地点一下右上角的 Fork 按钮，也就是”叉子“的意思，把它”夹“到自己的盘子里！（哈哈，这里的 Fork 是动词形式，专业一点叫分叉，也就是复制一份到自己的仓库里）
-
+来，找到市面上一切转换平台的幕后源头项目，大名鼎鼎的：[CareyWang/sub-web](https://github.com/CareyWang/sub-web)，然后轻轻地点一下右上角的 Fork 按钮，也就是“叉子”的意思，把它“夹”到自己的盘子里！（哈哈，这里的 Fork 是动词形式，专业一点叫分叉，也就是复制一份到自己的仓库里）
 
 ![](https://pan.createvoyage.com/f/5yDu6/setting-up-clash-front-end-dashboard-01.png)
+
+### 修改配置代码
+
+我们需要将自己的域名与一些额外的配置写入至配置文件代码中，这样才能将“公共”的开源项目变成“你自己”的应用。现在在 Github 找到 `/sub-web/src/views/Subconverter.vue` 文件，点击右上角的编辑按钮开始进行修改。
+
+![4](https://pan.createvoyage.com/f/82QfY/setting-up-clash-front-end-dashboard-04.png)
+
+将位于 298 行的 `backendOptions:` 中的 `url` 修改为你的已解析域名。你可以按照下图进行修改，要记住保留 `/sub?` 后缀。
+
+![3](https://pan.createvoyage.com/f/734UZ/setting-up-clash-front-end-dashboard-03.png)
+
+然后在 299 行的 `remoteConfig` 中添加以下参数，这会扩充你的前端可选转换配置。
+
+```vue
+{
+            label: "ACL4SSR",
+            options: [
+              {
+                label: "ACL4SSR_Online 默认版 分组比较全 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini"
+              },
+              {
+                label: "ACL4SSR_Online_AdblockPlus 更多去广告 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_NoAuto 无自动测速 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Online_NoReject 无广告拦截规则 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoReject.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini 精简版 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_AdblockPlus.ini 精简版 更多去广告 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_NoAuto.ini 精简版 不带自动测速 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_Fallback.ini 精简版 带故障转移 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_Fallback.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini_MultiMode.ini 精简版 自动测速、故障转移、负载均衡 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini_MultiMode.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full 全分组 重度用户使用 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_NoAuto.ini 全分组 无自动测速 重度用户使用 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_AdblockPlus 全分组 重度用户使用 更多去广告 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_AdblockPlus.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full_Netflix 全分组 重度用户使用 奈飞全量 (与 Github 同步)",
+                value:
+                  "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_Netflix.ini"
+              },
+              {
+                label: "ACL4SSR 本地 默认版 分组比较全",
+                value: "config/ACL4SSR.ini"
+              },
+              {
+                label: "ACL4SSR_Mini 本地 精简版",
+                value: "config/ACL4SSR_Mini.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_NoAuto.ini 本地 精简版+无自动测速",
+                value: "config/ACL4SSR_Mini_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_Mini_Fallback.ini 本地 精简版+fallback",
+                value: "config/ACL4SSR_Mini_Fallback.ini"
+              },
+              {
+                label: "ACL4SSR_BackCN 本地 回国",
+                value: "config/ACL4SSR_BackCN.ini"
+              },
+              {
+                label: "ACL4SSR_NoApple 本地 无苹果分流",
+                value: "config/ACL4SSR_NoApple.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto 本地 无自动测速 ",
+                value: "config/ACL4SSR_NoAuto.ini"
+              },
+              {
+                label: "ACL4SSR_NoAuto_NoApple 本地 无自动测速&无苹果分流",
+                value: "config/ACL4SSR_NoAuto_NoApple.ini"
+              },
+              {
+                label: "ACL4SSR_NoMicrosoft 本地 无微软分流",
+                value: "config/ACL4SSR_NoMicrosoft.ini"
+              },
+              {
+                label: "ACL4SSR_WithGFW 本地 GFW 列表",
+                value: "config/ACL4SSR_WithGFW.ini"
+              }
+            ]
+          },
+```
+
+如果不想用使用默认的后端转换地址，那么可以把 `const defaultBackend` 后的参数改为自己的域名。例如：
+
+```vue
+const defaultBackend = "https://your-domin.xyz" + '/sub?'
+```
+
+### 提交代码
+
+修改完成后记得在 Github 上进行提交。
+
+![5](https://pan.createvoyage.com/f/9rVI2/setting-up-clash-front-end-dashboard-05.png)
+
+## 2. 发布至 Vercel
+
+这一步非常简单了。访问 [Vercel 平台](https://vercel.com/new)，然后 Import 刚刚修改好的 Clash 仓库。
+
+![6](https://pan.createvoyage.com/f/0RWSm/setting-up-clash-front-end-dashboard-06.png)
+
+然后点击 Deploy。稍等片刻，不出意外的话它会报错。
+
+![7](https://pan.createvoyage.com/f/gJRFG/setting-up-clash-front-end-dashboard-07.png)
+
+这是因为 Vercel 默认的 Node 版本号 ≥ 20 ，而本项目并不需要这么高的 Node 版本，所以需要进入项目中的设置进行修改。在 Setting → General 中的 Node.js Version 处进行切换。
+
+![8](https://pan.createvoyage.com/f/jREfR/setting-up-clash-front-end-dashboard-08.png)
+
+部署完成后，Vercel 会默认给你分配一个免费的域名。不过还是建议你去 Domins 绑定个人域名，这一步需要跳转到域名管理后台中进行操作，把域名指向 Vercel 给你的地址就可以了。
+
+![9](https://pan.createvoyage.com/f/kRyh5/setting-up-clash-front-end-dashboard-09.png)
+
 
