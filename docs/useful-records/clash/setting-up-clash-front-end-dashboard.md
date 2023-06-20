@@ -1,18 +1,19 @@
 ---
 id: setting-up-clash-front-end-dashboard
 slug: /clash/setting-up-clash-front-end-dashboard
-title: 搭建 Clash 订阅转换前端
+title: 搭建 Clash 订阅转换平台
 last_update:
   date: 2023-06-14 20:48:11
 ---
 
-> 如果你想直接使用 Clash 转码平台，不想知道这里的门道，那不妨直接点击[此处](https://clash.offshoreview.xyz)。
 
-![](https://pan.createvoyage.com/f/685Cy/setting-up-clash-front-end-dashboard-02.png)
+:::tip
+如果你想直接使用 Clash 转码平台，不想知道这里的门道，那不妨直接点击[此处](https://clash.offshoreview.xyz)开始使用。
+:::
 
-## 前言
+## [前言](#preface)
 
-网上有太多使用复杂的宝塔面板进行搭建 Clash 前端的教程，但它们基本都是要求通过宝塔面板来进行搭建。但是，这样的教程对于新手来说，虽然可以跟着走，但是依然不够「快」。
+网上有太多使用复杂的宝塔面板进行搭建 Clash 前端的教程，但它们基本都是要求通过宝塔面板来进行搭建。但是，这样的教程对于新手来说，虽然可以跟着走，但是依然不够「快」。如果你还不知道何为 Clash，那么请阅读[《什么是 Clash？》](/clash/introduction)
 
 :::caution
 国内版宝塔还要求输入手机号。
@@ -23,22 +24,13 @@ last_update:
 
 现在我们有了强大的 [Vercel 平台](https://vercel.com/dashboard)，对付一些简单的 Web 服务应用绰绰有余了。我们可以直接通过 GitHub 仓库一键进行部署，仅需要配置一个域名用于前端、拉取一个容器搞定后端就可以了，关键它也是持久免费的。
 
-### 什么是 Clash？
-
-Clash 是一个非常强大的工具，几乎兼容业内的主流协议。可以说，无论你试用的什么协议，**All in Clash**，不需要纠结要下载什么软件，把你手上的配置转码处理后丢给 Clash 就对了。Clash 作为开源软件，几乎席卷所有平台：安卓、iOS、macOS 与 Linux。
-
-### 为什么需要搭建 Clash 订阅转码平台？
-
-市面上存在两种订阅类型，一种叫**节点订阅链接**，另一种叫 **Clash 订阅链接**。节点订阅链接只能够被兼容特定协议的软件所识别，同理， Clash 这个工具只认 **Clash 订阅链接**。
-
-常规的**节点订阅链接**并不能够直接在 Clash 上运行，而所有**节点订阅链接**都能够转码为 **Clash 订阅链接**。因此我们需要一个转换平台，虽然市面上已经有许许多多的转换平台，不过为了确保数据与订阅链接信息安全，最好还是自己搭建一个专用的平台。
-
 ## 前置条件
 
 - GitHub 账号
 - VPS
 - 在 VPS 上部署 [Nginx Proxy Manager](https://nginxproxymanager.com/)
-- 将域名解析至 VPS，用于定义前端地址
+- 前端域名
+- 后端域名
 
 
 ## 开始动手
@@ -208,8 +200,38 @@ const defaultBackend = "https://your-domin.xyz" + '/sub?'
 
 ![8](https://pan.createvoyage.com/f/jREfR/setting-up-clash-front-end-dashboard-08.png)
 
-部署完成后，Vercel 会默认给你分配一个免费的域名。不过还是建议你去 Domins 绑定个人域名，这一步需要跳转到域名管理后台中进行操作，把域名指向 Vercel 给你的地址就可以了。
+部署完成后，Vercel 会默认给你分配一个免费的域名。不过还是建议你去 Domins 绑定前端域名，这一步需要跳转到域名管理后台中进行操作，把域名指向 Vercel 给你的地址就可以了。
 
-![9](https://pan.createvoyage.com/f/kRyh5/setting-up-clash-front-end-dashboard-09.png)
+![9](https://pan.createvoyage.com/f/mZLhW/setting-up-clash-front-end-dashboard-09.png)
 
+## 3. 部署后端应用
 
+在 VPS 中拉取以下 Docker 镜像：
+
+```bash
+docker run -d --restart=always -p 25500:25500 tindy2013/subconverter:latest
+```
+
+等待镜像安装结束后，使用以下命令验证镜像是否正在提供服务：
+
+```bash
+curl http://localhost:25500/version
+```
+
+若返回 `subconverter vx.x.x backend` 则说明服务正在运行。
+
+## 4. 将后端域名指向服务端口
+
+登录你的 Nginx Proxy Manager（NPM）后台页面，然后添加 `Proxy`，把你的后端域名填写进来。IP 处不要填写 `127.0.0.1`，而是要写成 VPS 的公网 IP + 端口号，例如 `214.124.214.25`，Forward Port 端口号填写 25500。
+
+![npm-1](https://pan.createvoyage.com/f/n5num/npm-1.png)
+
+顺便开启 SSL 证书。
+
+![npm-2](https://pan.createvoyage.com/f/oYRsv/npm-2.png)
+
+绑定完成后，访问你的后端域名，如果出现的页面并非 Nginx 的报错提醒，那么意味着你已经成功搭建后端了。
+
+![npm-3](https://pan.createvoyage.com/f/pgYtA/npm-3.png)
+
+至此，你就可以愉快的使用自己的 Clash 订阅转码平台了。
