@@ -10,8 +10,8 @@ const sidebars = {
         id: 'useful-records/clash/overview'
       },
       items: [
+        'useful-records/clash/introduction',        
         'useful-records/clash/setting-up-clash-front-end-dashboard',
-        'useful-records/clash/manual-import',
       ],
       collapsed: false,
     },
@@ -24,7 +24,6 @@ const sidebars = {
       },
       items: [
         'useful-records/docker/nginx-proxy-managor',
-        'useful-records/clash/manual-import',
       ],
       collapsed: false,
     },    
