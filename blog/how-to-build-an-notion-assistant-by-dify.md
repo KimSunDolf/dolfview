@@ -1,6 +1,6 @@
 ---
 slug: notion-dify
-title: How to build an Notion AI assistant based on your own notes?
+title: How to Build an Notion AI Assistant Based on Your Own Notes?
 date: 2023-06-26 20:51:20
 tags: [Dify,ai,notion]
 authors: Dolf
@@ -8,23 +8,25 @@ authors: Dolf
 
 ## Intro
 
-Notion is a powerful tool for knowledge management. It's flexibility and extensibility make it a great personal knowledge library and common workspace. Lots of people are using it to store their knowledge and collaborate with others, exchanging ideas and creating new knowledge.
+Notion is a powerful tool for knowledge managements. Its flexibility and extensibility make it a great personal knowledge library and common workspace. Many people use it to store their knowledge and collaborate with others, exchanging ideas and creating new knowledge.
 
-But those knowledge are still static, and you have to search for the knowledge you need, and you have to read them to get the answer you want. It's not very efficient, and it's not very smart.
+However, this knowledge is still static, and users have to search for the information they need and read through it to find the answers they want. This process is not very efficient nor smart.
 
-Did you even dream of having an AI assistant that is based on your own Notion library, not only help you review your knowledge base, and talk like a senior butler, even answer others questions just like a master of your own library?
+Have you ever dreamed of having an AI assistant that is based on your Notion library? It would not only help you review your knowledge base but also communicate like a senior butler, even answering other people's questions as if you were a master of your own library.
 
-## How to make it come true?
 
-Now, you can make it come true with [Dify](https://dify.ai/). Dify is an Open source LLMOps(Large Language Models Ops) platform 
+## How to Make Your Notion AI Assistant Come True?
 
-Large Language Models like ChatGPT and Claude have use its shakening abailty to impress the world. The key to their powerful learning abality is training data. Lucily, they are smart enough to learn from the content you provided, which make the process of learning from personal notion library come true.
+Now, you can make it come true with [Dify](https://dify.ai/). Dify is an open-source LLMOps (Large Language Models Ops) platform.
 
-Without Dify, you might need to learn how to use langchain, which provides an abstraction that simplifies the process of composing these pieces. 
+Large Language Models like ChatGPT and Claude have used their impressive abilities to reshape the world. The key to their powerful learning ability is robust training data. Luckily, they are intelligent enough to learn from the content you provide, making the process of learning from your personal Notion library a reality.
 
-Dify is an easy-to-use LLMOps platform designed to empower more people to create sustainable, AI-native applications. With visual orchestration for various application types, Dify offers out-of-the-box, ready-to-use applications that can help you use data to build your own AI assistant.
+Without Dify, you might need to familiarize yourself with langchain, which provides an abstraction that simplifies the process of composing these pieces.
 
-## How to use Dify to build your own AI assistant?
+Dify is an easy-to-use LLMOps platform designed to empower more individuals to create sustainable, AI-native applications. With visual orchestration for various application types, Dify offers ready-to-use applications that can assist you in utilizing data to construct your own AI assistant.
+
+
+## How to Use Dify to Build your Own AI Assistant?
 
 The process of trainging Notion AI assistant is very simple. You just need to follow the steps below:
 
