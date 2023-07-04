@@ -58,15 +58,15 @@ Select "Sync from Notion" and click the "Go to Connect" button.
 
 Then, you will be redirected to the Notion login page. Login with your Notion account.
 
-![connect-with-notion-2](https://pan.createvoyage.com/f/866UY/connect-with-notion-2.png)
+<img alt="connect-with-notion-2" src="https://pan.createvoyage.com/f/866UY/connect-with-notion-2.png" width="500px" />
 
 Check the permission needed by Dify, and then click the "Select pages" button.
 
-![connect-with-notion-3](https://pan.createvoyage.com/f/9Q1U2/connect-with-notion-3.png)
+<img alt="connect-with-notion-3" src="https://pan.createvoyage.com/f/9Q1U2/connect-with-notion-3.png" width="500px" />
 
 Select the pages you want to sync with Dify, and then click the "Allow access" button.
 
-![connect-with-notion-4](https://pan.createvoyage.com/f/0V8Hm/connect-with-notion-4.png)
+<img alt="connect-with-notion-4" src="https://pan.createvoyage.com/f/0V8Hm/connect-with-notion-4.png" width="500px" />
 
 ### 4. Start training
 
@@ -102,34 +102,23 @@ Now you can click the public URL at the "Overview" to chat with your own AI assi
 
 ![create-app-4](https://pan.createvoyage.com/f/oQ7Cv/create-app-4.png)
 
-## Sync with notion periodically
-
-If your Notion's pages have updated, you can sync with Dify periodically to keep your AI assistant up-to-date. Your AI assistant will learn from the new content and answer the new questions.
-
-![create-app-5](https://pan.createvoyage.com/f/pQBFA/create-app-5.png)
-
 ## Using API To Integrate With Your Project
 
-Each AI application baked by Dify can be accessed via API. 
-
-This approach allows developers to directly tap into the robust functionalities of large language models (LLMs) within frontend applications, offering a truely "Backend-as-a-Service" (BaaS)
-experience.
-
-### 1. Check API Reference
+Each AI application baked by Dify can be accessed via API. This approach allows developers to directly tap into the robust functionalities of large language models (LLMs) within frontend applications, offering a truely "Backend-as-a-Service" (BaaS) experience.
 
 With effortless API integration, you can conveniently invoke your Notion AI application without the need for intricate configurations.
 
-Click the "API Reference" button on the page of your own AI APP's "Overview" page. You can see it as an API document.
+Click the "API Reference" button on the page of Overview page. You can see it as your App's API document.
 
 ![using-api-1](https://pan.wsyfin.com/f/wp0Cy/using-api-1.png)
 
-### 2. Generate API Secret Key
+### 1. Generate API Secret Key
 
 For sercurity reason, it's recommened to generate an API secret key to access your AI application.
 
 ![using-api-2](https://pan.wsyfin.com/f/xk2Fx/using-api-2.png)
 
-### 3. Retrieve Conversation ID
+### 2. Retrieve Conversation ID
 
 After chatting with your AI application, you can retrieve the session ID from the "Logs & Ann." pages.
 
@@ -139,7 +128,9 @@ After chatting with your AI application, you can retrieve the session ID from th
 
 You can run the example request code on the API document to invoke your AI application in terminal.
 
-Remember to replace `YOUR SECRET KEY` and `conversation_id` on your code:
+Remember to replace `YOUR SECRET KEY` and `conversation_id` on your code.
+
+> You can input empty `conversation_id` at the first time, and replace it after you receive response contained `conversation_id`.
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
@@ -149,26 +140,27 @@ curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
     "inputs": {},
     "query": "eh",
     "response_mode": "streaming",
-    "conversation_id": "1c7e55fb-1ba2-4e10-****-********",
+    "conversation_id": "",
     "user": "abc-123"
 }'
 ```
 
-Run it in the terminal and you will got successful response.
+Sending request in terminal and you will get a successful response.
+
+![using-api-4](https://pan.wsyfin.com/f/zpnI4/using-api-4.png)
+
+If you want to continue this chat, go to replace the `conversation_id` of the request code to the `conversation_id` you get from the response.
+
+And you can check all the conversation history on the "Logs & Ann." page.
+
+![using-api-5](https://pan.wsyfin.com/f/ADQSE/using-api-5.png)
+
+## Sync with notion periodically
+
+If your Notion's pages have updated, you can sync with Dify periodically to keep your AI assistant up-to-date. Your AI assistant will learn from the new content and answer the new questions.
+
+![create-app-5](https://pan.createvoyage.com/f/pQBFA/create-app-5.png)
 
 ## Summary
 
 In this tutorial, you have learned not only how to import your Notion data into Dify, but also use API to integrate with your project. Do not hesitate to contact us if you have any questions.
-
-## 提纲
-
-1. 概述 Dify 可以导入 Notion 数据
-2. 这件事对于用户自己的价值，以及对于 Dify 的价值
-3. 如何导入？
-4. 后续同步 Notion 数据
-5. 开始问答（结果验证）
-
-
-题目备选：
-1. 将你的 Notion 数据投喂给 GPT，打造个人 Notion 知识库的 AI 助手。
-2. Notion + AI：最懂你的个人知识库人工智能。
