@@ -9,7 +9,7 @@ const config = {
   titleDelimiter: '-',
   url: 'https://wsyfin.com',//请填写你的网站
   baseUrl: '/',//建议填写/
-  favicon: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
+  favicon: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
   organizationName: '',
   projectName: 'dolf-vew',
   tagline: '道孚站',
@@ -55,8 +55,8 @@ const config = {
       title: '道孚站',
       logo: {
         alt: 'Dolf',
-        src: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',
-        srcDark: 'https://pan.createvoyage.com/f/0WHm/modified-white-new.ico',//记得加上绝对路径/
+        src: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
+        srcDark: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
@@ -285,7 +285,7 @@ const config = {
         path: 'blog',
         routeBasePath: '/',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/wrm244/docusaurus-theme-zen/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/KimSunDolf/dolfview/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: 'docusaurus-theme-zen',
         blogSidebarCount: 10,
