@@ -108,6 +108,58 @@ If your Notion's pages have updated, you can sync with Dify periodically to keep
 
 ![create-app-5](https://pan.createvoyage.com/f/pQBFA/create-app-5.png)
 
+## Using API To Integrate With Your Project
+
+Each AI application baked by Dify can be accessed via API. 
+
+This approach allows developers to directly tap into the robust functionalities of large language models (LLMs) within frontend applications, offering a truely "Backend-as-a-Service" (BaaS)
+experience.
+
+### 1. Check API Reference
+
+With effortless API integration, you can conveniently invoke your Notion AI application without the need for intricate configurations.
+
+Click the "API Reference" button on the page of your own AI APP's "Overview" page. You can see it as an API document.
+
+![using-api-1](https://pan.wsyfin.com/f/wp0Cy/using-api-1.png)
+
+### 2. Generate API Secret Key
+
+For sercurity reason, it's recommened to generate an API secret key to access your AI application.
+
+![using-api-2](https://pan.wsyfin.com/f/xk2Fx/using-api-2.png)
+
+### 3. Retrieve Conversation ID
+
+After chatting with your AI application, you can retrieve the session ID from the "Logs & Ann." pages.
+
+![using-api-3](https://pan.wsyfin.com/f/yPXHL/using-api-3.png)
+
+### 3. Invoke API
+
+You can run the example request code on the API document to invoke your AI application in terminal.
+
+Remember to replace `YOUR SECRET KEY` and `conversation_id` on your code:
+
+```bash
+curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
+--header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "inputs": {},
+    "query": "eh",
+    "response_mode": "streaming",
+    "conversation_id": "1c7e55fb-1ba2-4e10-****-********",
+    "user": "abc-123"
+}'
+```
+
+Run it in the terminal and you will got successful response.
+
+## Summary
+
+In this tutorial, you have learned not only how to import your Notion data into Dify, but also use API to integrate with your project. Do not hesitate to contact us if you have any questions.
+
 ## 提纲
 
 1. 概述 Dify 可以导入 Notion 数据
