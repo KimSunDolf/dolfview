@@ -49,6 +49,11 @@ const sidebars = {
   ],
   ai: [
     'ai/scripts-by-gpt',
+  ],
+  finance: [
+    'finance/hsbc-account',
+    'finance/stock-account',
+    'finance/before-go-to-hk',
   ]
 }
 
