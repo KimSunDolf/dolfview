@@ -75,7 +75,11 @@ const config = {
             {
               label: 'AI 探索',
               to: 'docs/ai/',
-            },            
+            },
+            {
+              label: '金融相关',
+              to: 'docs/finance/',
+            },
           ],
         },
         {
