@@ -171,4 +171,6 @@ If your Notion's pages have updated, you can sync with Dify periodically to keep
 
 ## Summary
 
-In this tutorial, we have learned not only how to import Your Notion data into Dify, but also know how to use the API to integrate it with your project. [Dify](https://dify.ai/) is a user-friendly LLMOps platform targeted to empower more individuals to create sustainable, AI-native applications. With visual orchestration designed for various application types, Dify offers ready-to-use applications that can assist you in utilizing data to craft your distinctive AI assistant. Do not hesitate to contact us if you have any inquiries.
+In this tutorial, we have learned not only how to import Your Notion data into Dify, but also know how to use the API to integrate it with your project. 
+
+[Dify](https://dify.ai/) is a user-friendly LLMOps platform targeted to empower more individuals to create sustainable, AI-native applications. With visual orchestration designed for various application types, Dify offers ready-to-use applications that can assist you in utilizing data to craft your distinctive AI assistant. Do not hesitate to contact us if you have any inquiries.
