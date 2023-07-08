@@ -12,9 +12,13 @@ authors: Dolf
 
 Notion is a powerful tool for managing knowledge. Its flexibility and extensibility make it an excellent personal knowledge library and shared workspace. Many people use it to store their knowledge and work in collaboration with others, facilitating the exchange of ideas and the creation of new knowledge.
 
+![notion-library](https://pan.wsyfin.com/f/xG2Hx/notion-library.png)
+
 However, this knowledge remains static, as users must search for the information they need and read through it to find the answers they're seeking. This process is neither particularly efficient nor intelligent.
 
 Have you ever dreamed of having an AI assistant based on your Notion library? This assistant would not only assist you in reviewing your knowledge base, but also engage in the communication like a seasoned butler, even answering other people's questions as if you were the master of your personal Notion library.
+
+![notes-ai.png](https://pan.wsyfin.com/f/wj0Hy/notes-ai.png)
 
 <!-- truncate -->
 
@@ -23,6 +27,8 @@ Have you ever dreamed of having an AI assistant based on your Notion library? Th
 Now, you can make this dream come true through [Dify](https://dify.ai/). Dify is an open-source LLMOps (Large Language Models Ops) platform.
 
 Large Language Models like ChatGPT and Claude, have been using their impressive abilities to reshape the world. Their powerful learning aptitude primarily attributable to robust training data. Luckily, they've evolved to be sufficiently intelligent to learn from the content you provide, thus making the process of ideating from your personal Notion library, a reality.
+
+![ai-learning](https://pan.wsyfin.com/f/r0Rf2/ai-learning.webp)
 
 Without Dify, you might need to acquaint yourself with langchain, an abstraction that streamlines the process of assembling these pieces.
 
