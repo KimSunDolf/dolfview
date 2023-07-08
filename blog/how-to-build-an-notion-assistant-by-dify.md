@@ -58,11 +58,11 @@ Click the `Datasets` button on the top side bar, followed by the `Create Dataset
 
 ### 3. Connect with Notion and Your Datasets
 
-Select "Sync from Notion" and then click the "Go to Connect" button.
+Select "Sync from Notion" and then click the "Connect" button.
 
 ![connect-with-notion-1](https://pan.wsyfin.com/f/J6WsK/connect-with-notion-1.png)
 
-Afterward, you'll be redirected to the Notion login page. Log in using your Notion account.
+Afterward, you'll be redirected to the Notion login page. Log in with your Notion account.
 
 <img alt="connect-with-notion-2" src="https://pan.wsyfin.com/f/KrEi4/connect-with-notion-2.png" width="500px" />
 
@@ -76,7 +76,7 @@ Select the pages you want to synchronize with Dify, and press the "Allow access"
 
 ### 4. Start training
 
-Specifying the pages for AI need to study, enabling it to comprehend the content within this section of Notion. Then click the "Allow access" button.
+Specifying the pages for AI need to study, enabling it to comprehend the content within this section of Notion. Then click the "next" button.
 
 ![train-1](https://pan.wsyfin.com/f/Nkjuj/train-1.png)
 
@@ -128,7 +128,7 @@ Click the "API Reference" button on the page of Overview page. You can refer to 
 
 ### 1. Generate API Secret Key
 
-For sercurity reason, it's recommened to generate an API secret key to access your AI application.
+For sercurity reason, it's recommened to create new API secret key to access your AI application.
 
 ![using-api-2](https://pan.wsyfin.com/f/xk2Fx/using-api-2.png)
 
