@@ -54,7 +54,11 @@ const sidebars = {
     'finance/hsbc-account',
     'finance/stock-account',
     'finance/before-go-to-hk',
-  ]
+  ],
+  microsoft: [
+    'microsoft/introduction',
+    'microsoft/e3-msdn-setting',
+  ]  
 }
 
 module.exports = sidebars

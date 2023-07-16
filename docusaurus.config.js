@@ -80,6 +80,10 @@ const config = {
               label: '金融相关',
               to: 'docs/finance/',
             },
+            {
+              label: '微软 365',
+              to: 'docs/microsoft/',
+            },            
           ],
         },
         {
@@ -354,8 +358,8 @@ const config = {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
     localeConfigs: {
-      en: {
-        htmlLang: 'zn-CN',
+      zh: {
+        htmlLang: 'zh-CN',
       },
       en: {
         htmlLang: 'en-GB',

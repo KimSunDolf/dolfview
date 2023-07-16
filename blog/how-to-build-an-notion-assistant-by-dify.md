@@ -12,6 +12,8 @@ authors: Dolf
 
 Notion is a powerful tool for managing knowledge. Its flexibility and extensibility make it an excellent personal knowledge library and shared workspace. Many people use it to store their knowledge and work in collaboration with others, facilitating the exchange of ideas and the creation of new knowledge.
 
+<!-- truncate -->
+
 ![notion-library](https://pan.wsyfin.com/f/xG2Hx/notion-library.png)
 
 However, this knowledge remains static, as users must search for the information they need and read through it to find the answers they're seeking. This process is neither particularly efficient nor intelligent.
@@ -19,8 +21,6 @@ However, this knowledge remains static, as users must search for the information
 Have you ever dreamed of having an AI assistant based on your Notion library? This assistant would not only assist you in reviewing your knowledge base, but also engage in the communication like a seasoned butler, even answering other people's questions as if you were the master of your personal Notion library.
 
 ![notes-ai.png](https://pan.wsyfin.com/f/wj0Hy/notes-ai.png)
-
-<!-- truncate -->
 
 ## How to Make Your Notion AI Assistant Come True?
 
