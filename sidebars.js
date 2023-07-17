@@ -58,7 +58,11 @@ const sidebars = {
   microsoft: [
     'microsoft/introduction',
     'microsoft/e3-msdn-setting',
-  ]  
+  ],
+  docusaurus: [
+    'docusaurus/introduction',
+    'docusaurus/alert-block',
+  ],  
 }
 
 module.exports = sidebars
