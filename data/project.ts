@@ -10,11 +10,20 @@ export const projects: Project[] = [
   },
   {
     title: '飞鸟 Chat',
-    description: ' 回答你的一切问题。',
+    description: '回答你的一切问题。',
     preview: 'https://pan.createvoyage.com/f/Ootv/chat-cover.png',
     website: 'https://ai.offshoreview.xyz/',
     source: 'https://github.com/Yidadaa/ChatGPT-Next-Web',
     tags: ['opensource', 'design', 'favorite'],
+    type: 'web',
+  },
+  {
+    title: '3D 网页设计：房间',
+    description: '在网页中查看并调整 3D 房间光照参数！',
+    preview: 'https://one.offshoreview.xyz/docu-work/c4338105d6b0b900927c2dc00c85fe73.png',
+    website: 'https://3d-room.offshoreview.xyz/',
+    source: 'https://github.com/brunosimon/my-room-in-3d',
+    tags: ['opensource', 'design', 'product'],
     type: 'web',
   },  
 ]
