@@ -16,7 +16,7 @@ const config = {
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
-    image: '/assets/images/social/avatar.png',
+    image: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
     announcementBar: {
        id: 'announcementBar-3',
       content: announcementBarContent,
