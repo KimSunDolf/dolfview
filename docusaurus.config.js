@@ -83,6 +83,10 @@ const config = {
             {
               label: '微软 365',
               to: 'docs/microsoft/',
+            },
+            {
+              label: 'Docusaurus',
+              to: 'docs/docusaurus/',
             },            
           ],
         },
