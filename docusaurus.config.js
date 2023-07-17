@@ -80,6 +80,10 @@ const config = {
               label: '金融相关',
               to: 'docs/finance/',
             },
+            {
+              label: '微软 365',
+              to: 'docs/microsoft/',
+            },            
           ],
         },
         {
@@ -354,8 +358,8 @@ const config = {
     defaultLocale: 'zh-CN',
     locales: ['en', 'zh-CN'],
     localeConfigs: {
-      en: {
-        htmlLang: 'zn-CN',
+      zh: {
+        htmlLang: 'zh-CN',
       },
       en: {
         htmlLang: 'en-GB',
@@ -364,18 +368,18 @@ const config = {
   },
   themes: [
     // ... Your other themes.
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        language: ["en", "zh"],
-        indexBlog: true,
-        indexPages: true,
-        indexDocs: true,
-      }),
-    ],
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+    //   ({
+    //     // `hashed` is recommended as long-term-cache of index file is possible.
+    //     hashed: true,
+    //     language: ["en", "zh"],
+    //     indexBlog: true,
+    //     indexPages: true,
+    //     indexDocs: true,
+    //   }),
+    // ],
   ],
 }
 

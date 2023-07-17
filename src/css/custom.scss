@@ -488,8 +488,8 @@ html[data-theme='dark'] .pagination-nav__link {
 .menu__list-item > .menu__link[tabindex] {
   font-size: 0.875rem;
   font-weight: normal;
-  letter-spacing: 1.2px;
-  line-height: 1.8em;
+  letter-spacing: 0.8px;
+  line-height: 1.3em;
 }
 
 .blog__section-title {
@@ -854,3 +854,10 @@ div[class^='announcementBar_'] {
   background: #ffffff00 !important;
   backdrop-filter: blur(10px) !important;
 }
+
+// 引入 ReactPlayer
+.react-player {
+  width: 100% !important;
+  height: auto !important;
+}
+
