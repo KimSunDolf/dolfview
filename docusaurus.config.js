@@ -175,7 +175,7 @@ const config = {
               to: 'resource',
             },
             {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://pan.createvoyage.com/f/KEf4/buildwith.png" /></a>`,
+              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="![](https://one.offshoreview.xyz/docu-work/0c9da2f62020ecb24c931e5291636280.png)" /></a>`,
             },
           ],
         },

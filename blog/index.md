@@ -6,7 +6,7 @@ tags: [飞鸟集,blog]
 authors: Dolf
 ---
 
-![logo](https://pan.createvoyage.com/f/JWcK/first-blog.jpeg)
+![logo](https://one.offshoreview.xyz/docu-work/86c1214d5b97e34c27bc74dc44d576f6.png)
 
 ## 发刊词
 

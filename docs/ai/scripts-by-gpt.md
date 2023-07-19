@@ -14,11 +14,11 @@ last_update:
 
 场景：文件夹中夹杂了非常多的异常文件，它们统一带了一个 `._` 前缀，例如：
 
-![](https://pan.createvoyage.com/f/318S2/1.png)
+![](https://one.offshoreview.xyz/docu-work/507f38b1be34e557b5fe52be586b5b64.png)
 
 咨询 ChatGPT 后，我得到一个非常好用的 Python 脚本，效果如下：
 
-![](https://pan.createvoyage.com/f/4xOtl/2.png)
+![](https://one.offshoreview.xyz/docu-work/6157a9d891966574bf59f956043096a2.png)
 
 仅需一秒，它就干掉了所有混乱的文件，只留下了我需要的文件。爽！
 
@@ -46,4 +46,55 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
             os.remove(path)
             print(f"{path} 已删除")
 
+```
+
+## 自动提取静态网站下的所有链接 URL
+
+如果你现在打包出了一个静态网站项目，但是不清楚里面的所有 URL 是否都能够正常打开，那么不妨使用下面的代码将所有的 URL 提取出来，然后使用工具进行批量检测。
+
+> 我现在改用 [claude.ai](https://claude.ai) 来为我写脚本，这是一款可以媲美 GPT4 效果并且还免费的 AI 服务。
+
+### 代码
+
+```py
+import xml.etree.ElementTree as ET
+import os
+
+# 查找并读取sitemap.xml文件
+sitemap_path = os.path.join('build', 'sitemap.xml')  
+tree = ET.parse(sitemap_path)
+root = tree.getroot()
+
+# 提取所有url元素 
+urls = []
+for url in root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url'):
+    urls.append(url.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text)
+
+# 将URL写入文件
+with open('redirect.md', 'w') as f:
+    f.write('# Redirects\n')
+    for url in urls:
+        f.write(f'- [{url}]({url})\n')
+
+print('Extracted URLs saved to redirect.md')
+```
+
+提取出的链接统一为：`![]()` 格式。如果你想要仅保留链接，可以使用下面的代码进行替换：
+
+```py
+import re
+
+with open('your-file.md') as f:
+  content = f.read()
+
+# 使用正则表达式匹配[]内的URL
+pattern = r'\[(.*?)\]' 
+urls = re.findall(pattern, content)
+
+# 把URL写入新文件
+with open('done.md', 'w') as f:
+  for url in urls:
+    f.write(url + '\n')
+    
+print('URLs extracted to old-urls.txt')
 ```
