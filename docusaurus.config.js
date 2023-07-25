@@ -87,6 +87,10 @@ const config = {
             {
               label: 'Docusaurus',
               to: 'docs/docusaurus/',
+            },
+            {
+              label: '苹果服务',
+              to: 'docs/apple/register-apple-id',
             },            
           ],
         },
@@ -175,7 +179,7 @@ const config = {
               to: 'resource',
             },
             {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://pan.createvoyage.com/f/KEf4/buildwith.png" /></a>`,
+              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://one-du.offshoreview.xyz/new-docu/c7521504f2cfe2c84b57a8783aa50d8d.png" /></a>`,
             },
           ],
         },
