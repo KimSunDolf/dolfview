@@ -65,7 +65,7 @@ const config = {
           position: 'left',
           items: [
             {
-              label: '技术相关',
+              label: '计算机折腾',
               to: 'docs/useful-records/',
             },
             {
@@ -91,6 +91,10 @@ const config = {
             {
               label: '苹果服务',
               to: 'docs/apple/register-apple-id',
+            },
+            {
+              label: '播客',
+              to: 'docs/radio/',
             },            
           ],
         },

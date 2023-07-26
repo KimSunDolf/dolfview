@@ -66,7 +66,11 @@ const sidebars = {
   apple: [
     'apple/register-apple-id',
     'apple/pay-service',
+  ],
+  radio: [
+    'radio/the-benefits-of-carrots',
   ],  
+
 }
 
 module.exports = sidebars
