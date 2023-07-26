@@ -2,7 +2,7 @@ export const projects: Project[] = [
   {
     title: '飞鸟集网络',
     description: '跨越世界，力求稳定。',
-    preview: 'https://one.offshoreview.xyz/docu-work/4888f6e1281ebfecf79189658d8c4571.png',
+    preview: 'https://one.offshoreview.xyz/docu-work/bee6aba362dc242afbdde538b9b41f01.png',
     website: 'https://www.offshoreview.xyz/',
     source: 'https://github.com/GeekQuerxy/SSPanel-Malio',
     tags: ['design', 'favorite'],
@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: '飞鸟 Chat',
     description: '回答你的一切问题。',
-    preview: 'https://pan.createvoyage.com/f/Ootv/chat-cover.png',
+    preview: 'https://one.offshoreview.xyz/docu-work/19019c398e53d5e011b179c64452f0ae.png',
     website: 'https://ai.offshoreview.xyz/',
     source: 'https://github.com/Yidadaa/ChatGPT-Next-Web',
     tags: ['opensource', 'design', 'favorite'],

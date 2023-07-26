@@ -6,7 +6,7 @@ tags: [飞鸟集,blog]
 authors: Dolf
 ---
 
-![](https://one.offshoreview.xyz/docu-work/c4338105d6b0b900927c2dc00c85fe73.png)
+![logo](https://one.offshoreview.xyz/docu-work/b7396cb7a8899d46bf13c1ef69a9000b.png)
 
 ## 发刊词
 
