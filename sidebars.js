@@ -62,6 +62,10 @@ const sidebars = {
   docusaurus: [
     'docusaurus/introduction',
     'docusaurus/alert-block',
+  ],
+  apple: [
+    'apple/register-apple-id',
+    'apple/pay-service',
   ],  
 }
 
