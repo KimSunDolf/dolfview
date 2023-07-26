@@ -47,17 +47,17 @@ Clash 转换平台主要由前端页面和后端服务构成。前端页面主�
 
 来，找到市面上一切转换平台的幕后源头项目，大名鼎鼎的：[CareyWang/sub-web](https://github.com/CareyWang/sub-web)，然后轻轻地点一下右上角的 Fork 按钮，也就是“叉子”的意思，把它“夹”到自己的盘子里！（哈哈，这里的 Fork 是动词形式，专业一点叫分叉，也就是复制一份到自己的仓库里）
 
-![](https://pan.createvoyage.com/f/5yDu6/setting-up-clash-front-end-dashboard-01.png)
+![](https://one.offshoreview.xyz/docu-work/clash-dashboard-01.png)
 
 ### 修改配置代码
 
 我们需要将自己的域名与一些额外的配置写入至配置文件代码中，这样才能将“公共”的开源项目变成“你自己”的应用。现在在 Github 找到 `/sub-web/src/views/Subconverter.vue` 文件，点击右上角的编辑按钮开始进行修改。
 
-![4](https://pan.createvoyage.com/f/82QfY/setting-up-clash-front-end-dashboard-04.png)
+![](https://one-du.offshoreview.xyz/new-docu/85e3f58710dbbb035c0dfc57398a072d.png)
 
 将位于 298 行的 `backendOptions:` 中的 `url` 修改为你的已解析域名。你可以按照下图进行修改，要记住保留 `/sub?` 后缀。
 
-![3](https://pan.createvoyage.com/f/734UZ/setting-up-clash-front-end-dashboard-03.png)
+![](https://one-du.offshoreview.xyz/new-docu/4e88e2bee76e92d37881241e183071ac.png)
 
 然后在 299 行的 `remoteConfig` 中添加以下参数，这会扩充你的前端可选转换配置。
 
@@ -184,25 +184,25 @@ const defaultBackend = "https://your-domin.xyz" + '/sub?'
 
 修改完成后记得在 Github 上进行提交。
 
-![5](https://pan.createvoyage.com/f/9rVI2/setting-up-clash-front-end-dashboard-05.png)
+![](https://one-du.offshoreview.xyz/new-docu/430fe484a7c546537f257e96cd1eb8b3.png)
 
 ## 2. 发布至 Vercel
 
 这一步非常简单了。访问 [Vercel 平台](https://vercel.com/new)，然后 Import 刚刚修改好的 Clash 仓库。
 
-![6](https://pan.createvoyage.com/f/0RWSm/setting-up-clash-front-end-dashboard-06.png)
+![](https://one-du.offshoreview.xyz/new-docu/a3c98cc21a670a62eb0ed693b59bd153.png)
 
 然后点击 Deploy。稍等片刻，不出意外的话它会报错。
 
-![7](https://pan.createvoyage.com/f/gJRFG/setting-up-clash-front-end-dashboard-07.png)
+![](https://one-du.offshoreview.xyz/new-docu/ab8f4909f7f151be753cd5e8b989b5d6.png)
 
 这是因为 Vercel 默认的 Node 版本号 ≥ 20 ，而本项目并不需要这么高的 Node 版本，所以需要进入项目中的设置进行修改。在 Setting → General 中的 Node.js Version 处进行切换。
 
-![8](https://pan.createvoyage.com/f/jREfR/setting-up-clash-front-end-dashboard-08.png)
+![](https://one-du.offshoreview.xyz/new-docu/ddc1e11c0f4654507aaa43b5bdbd61fb.png)
 
 部署完成后，Vercel 会默认给你分配一个免费的域名。不过还是建议你去 Domins 绑定前端域名，这一步需要跳转到域名管理后台中进行操作，把域名指向 Vercel 给你的地址就可以了。
 
-![9](https://pan.createvoyage.com/f/mZLhW/setting-up-clash-front-end-dashboard-09.png)
+![](https://one-du.offshoreview.xyz/new-docu/52b07bd15e5b8c773f9cdc8f388385a5.png)
 
 ## 3. 部署后端应用
 
@@ -224,14 +224,14 @@ curl http://localhost:25500/version
 
 登录你的 Nginx Proxy Manager（NPM）后台页面，然后添加 `Proxy`，把你的后端域名填写进来。IP 处不要填写 `127.0.0.1`，而是要写成 VPS 的公网 IP + 端口号，例如 `214.124.214.25`，Forward Port 端口号填写 25500。
 
-![npm-1](https://pan.createvoyage.com/f/n5num/npm-1.png)
+![](https://one-du.offshoreview.xyz/new-docu/5b3ca6b08e24031be5a65b98eab9f03d.png)
 
 顺便开启 SSL 证书。
 
-![npm-2](https://pan.createvoyage.com/f/oYRsv/npm-2.png)
+![](https://one-du.offshoreview.xyz/new-docu/a6784ed8120b6bc444e7bfaaf3d9cc19.png)
 
 绑定完成后，访问你的后端域名，如果出现的页面并非 Nginx 的报错提醒，那么意味着你已经成功搭建后端了。
 
-![npm-3](https://pan.createvoyage.com/f/pgYtA/npm-3.png)
+![](https://one-du.offshoreview.xyz/new-docu/836a3b5a7e7f65aeed44b11f39b6ac89.png)
 
 至此，你就可以愉快的使用自己的 Clash 订阅转码平台了。
