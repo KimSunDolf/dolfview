@@ -6,8 +6,6 @@ tags: [飞鸟集,blog]
 authors: Dolf
 ---
 
-![logo](https://pan.createvoyage.com/f/JWcK/first-blog.jpeg)
-
 ## 发刊词
 
 这是飞鸟集文档中心第一篇文档。

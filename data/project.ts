@@ -2,7 +2,7 @@ export const projects: Project[] = [
   {
     title: '飞鸟集网络',
     description: '跨越世界，力求稳定。',
-    preview: 'https://pan.createvoyage.com/f/Njsj/cover-page.png',
+    preview: 'https://one.offshoreview.xyz/docu-work/4888f6e1281ebfecf79189658d8c4571.png',
     website: 'https://www.offshoreview.xyz/',
     source: 'https://github.com/GeekQuerxy/SSPanel-Malio',
     tags: ['design', 'favorite'],
