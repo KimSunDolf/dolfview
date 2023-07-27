@@ -14,11 +14,11 @@ last_update:
 
 场景：文件夹中夹杂了非常多的异常文件，它们统一带了一个 `._` 前缀，例如：
 
-![](https://one.offshoreview.xyz/docu-work/507f38b1be34e557b5fe52be586b5b64.png)
+![](https://one-du.offshoreview.xyz/new-docu/10ae9a3d94016b0a7ade901f221fc49c.png)
 
 咨询 ChatGPT 后，我得到一个非常好用的 Python 脚本，效果如下：
 
-![](https://one.offshoreview.xyz/docu-work/6157a9d891966574bf59f956043096a2.png)
+![](https://one-du.offshoreview.xyz/new-docu/95329660f7410f37a4f87ded4cfcbe2a.png)
 
 仅需一秒，它就干掉了所有混乱的文件，只留下了我需要的文件。爽！
 
@@ -48,6 +48,63 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
 
 ```
 
+<<<<<<< HEAD
+## 自动批量检测链接是否能够打开
+
+场景：当你接手的一个网站历史悠久，但发现 SEO 权重非常的一般，那有可能是因为坏链太多，导致搜索引擎判断这个网站的站点地图有很多不可靠，最终影响到网站权重。
+
+当你列出了 sitemap 文件后，这里面的链接总不能挨个手动点吧？这时候，你需要一个自动化脚本，能够帮你批量检测网站的链接是否能够打开。
+
+### 前置条件
+
+获取网站的 sitemap 文件，里面会列出这个网站的所有链接。当然，你也可以手动导入 csv 文件，格式大概长这样（其实就是包含完整 URLs 的地址）：
+
+```text
+https://estruturarte.com.br/pickup/F1850555
+https://ns.hashva.com/mah.php?wqyaesdppr/sj-371792.html
+https://classbclass.ir/content.php?pickup/K1178460
+https://forexreprogramming.com/pickup/I1752252
+https://eglow.mx/pickup/K1221646
+```
+### 代码
+
+代码需在 Python 环境下运行。
+
+```python
+import csv
+import requests
+from tqdm import tqdm
+
+urls_file = 'output_10.csv' # 填写你的文件路径
+result_file = 'result/output-10-result.csv' # 填写检测结果的存放路径
+
+with open(urls_file, 'r') as f:
+    reader = csv.reader(f)
+    urls = [row[0] for row in reader]
+
+results = []
+
+for url in tqdm(urls):
+    try:
+        response = requests.get(url, timeout=5)
+        if response.status_code == 200:
+            result = 'success'
+        else:
+            result = 'fail'
+    except requests.Timeout:
+        result = 'timeout'
+    except:
+        result = 'error'
+
+    results.append([url, result])
+
+with open(result_file, 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(['URL', 'Result'])
+    writer.writerows(results)
+```
+
+=======
 ## 自动提取静态网站下的所有链接 URL
 
 如果你现在打包出了一个静态网站项目，但是不清楚里面的所有 URL 是否都能够正常打开，那么不妨使用下面的代码将所有的 URL 提取出来，然后使用工具进行批量检测。
@@ -98,3 +155,4 @@ with open('done.md', 'w') as f:
     
 print('URLs extracted to old-urls.txt')
 ```
+>>>>>>> main
