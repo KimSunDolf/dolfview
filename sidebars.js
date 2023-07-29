@@ -69,6 +69,7 @@ const sidebars = {
   ],
   radio: [
     'radio/the-benefits-of-carrots',
+    'radio/the-battle-between-human-and-heat',
   ],  
 
 }
