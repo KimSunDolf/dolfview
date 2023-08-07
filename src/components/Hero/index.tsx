@@ -93,8 +93,8 @@ function Hero() {
         </animated.p>
         <SocialLinks style={trails[2]} />
         <animated.div style={trails[3]}>
-          <a className={styles.intro} href={'https://www.offshoreview.xyz'}>
-            <Translate id="hompage.hero.introduce">注册试用</Translate>
+          <a className={styles.intro} href={'mailto:ginsinglen@gmail.com'}>
+            <Translate id="hompage.hero.introduce">联系我</Translate>
           </a>
           <span>　</span>
           <Button isLink href={'https://ai.offshoreview.xyz'} target="_blank">
