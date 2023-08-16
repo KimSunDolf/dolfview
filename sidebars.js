@@ -26,7 +26,8 @@ const sidebars = {
         'useful-records/docker/nginx-proxy-managor',
       ],
       collapsed: false,
-    },    
+    },
+    'useful-records/djsk',
     {
       // label: 'Docusaurus',
       // type: 'category',
