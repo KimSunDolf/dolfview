@@ -51,6 +51,7 @@ const sidebars = {
   ai: [
     'ai/scripts-by-gpt',
     'ai/auto-batch-link-connectivity-tester',
+    'ai/how-to-transfer-chatgpt-api-service',
   ],
   finance: [
     'finance/hsbc-account',
