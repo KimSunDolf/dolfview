@@ -48,7 +48,6 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
 
 ```
 
-<<<<<<< HEAD
 ## 自动批量检测链接是否能够打开
 
 场景：当你接手的一个网站历史悠久，但发现 SEO 权重非常的一般，那有可能是因为坏链太多，导致搜索引擎判断这个网站的站点地图有很多不可靠，最终影响到网站权重。
@@ -104,55 +103,3 @@ with open(result_file, 'w') as f:
     writer.writerows(results)
 ```
 
-=======
-## 自动提取静态网站下的所有链接 URL
-
-如果你现在打包出了一个静态网站项目，但是不清楚里面的所有 URL 是否都能够正常打开，那么不妨使用下面的代码将所有的 URL 提取出来，然后使用工具进行批量检测。
-
-> 我现在改用 [claude.ai](https://claude.ai) 来为我写脚本，这是一款可以媲美 GPT4 效果并且还免费的 AI 服务。
-
-### 代码
-
-```py
-import xml.etree.ElementTree as ET
-import os
-
-# 查找并读取sitemap.xml文件
-sitemap_path = os.path.join('build', 'sitemap.xml')  
-tree = ET.parse(sitemap_path)
-root = tree.getroot()
-
-# 提取所有url元素 
-urls = []
-for url in root.findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url'):
-    urls.append(url.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text)
-
-# 将URL写入文件
-with open('redirect.md', 'w') as f:
-    f.write('# Redirects\n')
-    for url in urls:
-        f.write(f'- [{url}]({url})\n')
-
-print('Extracted URLs saved to redirect.md')
-```
-
-提取出的链接统一为：`![]()` 格式。如果你想要仅保留链接，可以使用下面的代码进行替换：
-
-```py
-import re
-
-with open('your-file.md') as f:
-  content = f.read()
-
-# 使用正则表达式匹配[]内的URL
-pattern = r'\[(.*?)\]' 
-urls = re.findall(pattern, content)
-
-# 把URL写入新文件
-with open('done.md', 'w') as f:
-  for url in urls:
-    f.write(url + '\n')
-    
-print('URLs extracted to old-urls.txt')
-```
->>>>>>> main
