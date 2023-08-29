@@ -52,6 +52,7 @@ const sidebars = {
     'ai/scripts-by-gpt',
     'ai/auto-batch-link-connectivity-tester',
     'ai/how-to-transfer-chatgpt-api-service',
+    'ai/auto-translator',    
   ],
   finance: [
     'finance/hsbc-account',
@@ -73,6 +74,7 @@ const sidebars = {
   radio: [
     'radio/the-benefits-of-carrots',
     'radio/the-battle-between-human-and-heat',
+    'radio/the-creator-of-air-conditioner',
     'radio/dayun-stadium',
   ],  
 
