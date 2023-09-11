@@ -28,6 +28,7 @@ const sidebars = {
       collapsed: false,
     },
     'useful-records/djsk',
+    'useful-records/gmail-api',
     {
       // label: 'Docusaurus',
       // type: 'category',
