@@ -60,11 +60,9 @@ const sidebars = {
     'finance/stock-account',
     'finance/before-go-to-hk',
   ],
-  finance: [
-    'finance/hsbc-account',
-    'finance/stock-account',
-    'finance/before-go-to-hk',
-  ],  
+  ecommerce: [
+    'ecommerce/facebook',
+  ],
   microsoft: [
     'microsoft/introduction',
     'microsoft/e3-msdn-setting',
