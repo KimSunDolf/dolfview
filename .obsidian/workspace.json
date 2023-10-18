@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "3752be9d0fa07ec2",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf9e8c19a6e8fe7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d75ce8c4ddafe9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/radio/原子弹是如何造出来的？.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2d7ce1ca56982f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9bef1c7f7c7351b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/radio/原子弹脚本.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d26cad2fbb453bfb",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4bcb4a7d8cd09aa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "998206617133c07c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dcb4e52e0690bb89",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bdb7115ad86bb1aa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7050f19e2e1d94cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bb4ef4bb3c21365",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ecec2a2304d7f63",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/radio/原子弹是如何造出来的？.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5d2ad507c0a4b0f2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/radio/原子弹是如何造出来的？.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b7d82746860b9054",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5b6983995415569b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/radio/原子弹是如何造出来的？.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "6d75ce8c4ddafe9b",
+  "lastOpenFiles": [
+    "docs/radio/原子弹脚本.md",
+    "docs/radio/原子弹是如何造出来的？.md",
+    "Pasted image 20231017210236.png",
+    "docs/radio/从冰块到冰箱：人类与热的斗争（上期）.md",
+    "docs/radio/从冰块到冰箱：人类与热的斗争（下期）.md",
+    "docs/radio/为什么胡萝卜对眼睛好.md"
+  ]
+}
