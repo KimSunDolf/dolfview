@@ -81,6 +81,10 @@ const config = {
               to: 'docs/finance/',
             },
             {
+              label: '跨境电商',
+              to: 'docs/ecommerce/facebook',
+            },            
+            {
               label: '微软 365',
               to: 'docs/microsoft/',
             },
