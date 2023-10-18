@@ -60,6 +60,9 @@ const sidebars = {
     'finance/stock-account',
     'finance/before-go-to-hk',
   ],
+  ecommerce: [
+    'ecommerce/facebook',
+  ],
   microsoft: [
     'microsoft/introduction',
     'microsoft/e3-msdn-setting',
@@ -77,7 +80,7 @@ const sidebars = {
     'radio/the-battle-between-human-and-heat',
     'radio/the-creator-of-air-conditioner',
     'radio/dayun-stadium',
-  ],  
+  ],
 
 }
 

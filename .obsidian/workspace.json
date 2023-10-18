@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "889c7509d9765fbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "114bf5e54297edc0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a70ee255278adfa",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b076d595f6be8116",
+    "type": "split",
+    "children": [
+      {
+        "id": "d0df77a14ddeaf13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b723475b329e612",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e844147aeb625cec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "05dffd4cb005d843",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c49ce5088c2fc9cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "874ae2d3f684c00e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8c69955cea7fc75",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7308f10e69e41dd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed20c6c69b47c61a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5a5aa1efc9f74df8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "3a70ee255278adfa",
+  "lastOpenFiles": [
+    "未命名 1.md",
+    "未命名.md",
+    "2023-10-09.md",
+    "未命名.canvas",
+    "docs/docusaurus/提示块代码.md",
+    "docs/apple/如何注册一个外区 Apple 账号.md",
+    "docs/apple/如何搞定 Apple 付费服务.md",
+    "apple/register-apple-id.md",
+    "apple",
+    "docs/ai/scripts-by-gpt.md",
+    "docs/ai/index.md",
+    "docs/ai/自动批量检测链接是否能够打开.md",
+    "docs/ai/自动翻译脚本.md",
+    "docs/ai/三步搭建 ChatGPT API 中转代理.md"
+  ]
+}
