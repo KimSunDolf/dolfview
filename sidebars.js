@@ -80,6 +80,7 @@ const sidebars = {
     'radio/the-battle-between-human-and-heat',
     'radio/the-creator-of-air-conditioner',
     'radio/dayun-stadium',
+    'radio/how-to-make-atomic-bomb',
   ],
 
 }
