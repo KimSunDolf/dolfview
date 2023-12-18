@@ -24,6 +24,7 @@ const sidebars = {
       },
       items: [
         'useful-records/docker/nginx-proxy-managor',
+        'useful-records/docker/redirect-docker',
       ],
       collapsed: false,
     },
