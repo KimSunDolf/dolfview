@@ -4,20 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "bf9e8c19a6e8fe7a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6d75ce8c4ddafe9b",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "e2d7ce1ca56982f7",
         "type": "tabs",
         "children": [
@@ -25,8 +11,12 @@
             "id": "9bef1c7f7c7351b8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "docs/radio/知识快问快答第二期（美拉德反应、糖的历史与胰岛素抵抗）.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -95,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/radio/知识快问快答第二期（美拉德反应、糖的历史与胰岛素抵抗）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/radio/知识快问快答第二期（美拉德反应、糖的历史与胰岛素抵抗）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/radio/知识快问快答第二期（美拉德反应、糖的历史与胰岛素抵抗）.md"
+              }
             }
           }
         ]
@@ -152,8 +146,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6d75ce8c4ddafe9b",
+  "active": "9bef1c7f7c7351b8",
   "lastOpenFiles": [
+    "docs/radio/知识快问快答第一期（二维码、上火与护手霜）.md",
+    "docs/radio/知识快问快答第二期（美拉德反应、糖的历史与胰岛素抵抗）.md",
+    "docs/radio/原子弹是如何造出来的？（下期）.md",
+    "docs/radio/原子弹是如何造出来的？（上期）.md",
+    "docs/useful-records/docker/如何通过 Docker 进行重定向.md",
     "未命名.md",
     "未命名.canvas",
     "未命名 1.md",
@@ -163,7 +162,6 @@
     "apple",
     "2023-10-09.md",
     "docs/radio/原子弹脚本.md",
-    "docs/radio/原子弹是如何造出来的？（上期）.md",
     "Pasted image 20231017210236.png",
     "docs/radio/从冰块到冰箱：人类与热的斗争（上期）.md",
     "docs/radio/从冰块到冰箱：人类与热的斗争（下期）.md",
