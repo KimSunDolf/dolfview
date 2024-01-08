@@ -82,6 +82,8 @@ const sidebars = {
     'radio/the-creator-of-air-conditioner',
     'radio/dayun-stadium',
     'radio/how-to-make-atomic-bomb',
+    'radio/quick-qa-1',
+    'radio/quick-qa-2',
   ],
 
 }
