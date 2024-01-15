@@ -77,6 +77,10 @@ const config = {
               to: 'docs/ai/',
             },
             {
+              label: 'MetaGPT',
+              to: 'docs/metagpt/',
+            },            
+            {
               label: '金融相关',
               to: 'docs/finance/',
             },
