@@ -54,8 +54,10 @@ const sidebars = {
     'ai/scripts-by-gpt',
     'ai/auto-batch-link-connectivity-tester',
     'ai/how-to-transfer-chatgpt-api-service',
-    'ai/auto-translator',    
   ],
+  metagpt: [
+    'metagpt/start',
+  ],  
   finance: [
     'finance/hsbc-account',
     'finance/stock-account',
