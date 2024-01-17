@@ -1,7 +1,7 @@
 ---
 id: start
-slug: /metagpt
-title: MetaGPT 开发入门笔记
+slug: ai/metagpt/start
+title: MetaGPT 课程入门笔记
 description: 本文介绍了如何安装 MetaGPT 并完成简单的环境初始化。
 last_update:
   date: 2024-01-15 08:38:03
@@ -29,7 +29,7 @@ AI Agent 想必是 2024 最火热的 AI 应用领域，谁不想要一个不吃�
 
 MetaGPT 只是**中间件、中间件、中间件**！它不是一个 AI 产品，你最终还是要在厨房里配置好 LLM（大模型）的！！所以现在让我们开始学习和折腾吧。
 
-## 必修课文
+## 第一期必修课文
 
 工欲善其事必先利其器，第一件事就是熟悉和了解你的工具。MetaGPT 的每节课都有课文，以下是第一节导读课：
 
