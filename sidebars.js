@@ -54,10 +54,20 @@ const sidebars = {
     'ai/scripts-by-gpt',
     'ai/auto-batch-link-connectivity-tester',
     'ai/how-to-transfer-chatgpt-api-service',
+    {
+      label: 'MetaGPT 教程',
+      type: 'category',
+      link: {
+        type: 'doc',
+        id: 'ai/metagpt/introduction'
+      },
+      items: [
+        'ai/metagpt/start',
+        'ai/metagpt/install',
+      ],
+      collapsed: false,
+    },    
   ],
-  metagpt: [
-    'metagpt/start',
-  ],  
   finance: [
     'finance/hsbc-account',
     'finance/stock-account',
