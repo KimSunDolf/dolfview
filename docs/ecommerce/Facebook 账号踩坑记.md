@@ -20,11 +20,11 @@ last_update:
 
 刚开始我还以为是哪里没做对，查了一下 Meta 自己的开发者论坛，有开发者反馈就是 Facebook 账号地区的问题。查看[原文地址](https://developers.facebook.com/community/threads/658603486107233/)。
 
-![](https://one-du.offshoreview.xyz/new-docu/4a5a63a001f6957b24846b4765612792.png)
+![](https://resource.offshoreview.xyz/new-docu/4a5a63a001f6957b24846b4765612792.png)
 
 而当你使用一个纯净的 Facebook 美国号进行注册的时候，神奇的一幕出现了：
 
-![](https://one-du.offshoreview.xyz/new-docu/2b518e578e72ab8d17b30fd605b64eb9.png)
+![](https://resource.offshoreview.xyz/new-docu/2b518e578e72ab8d17b30fd605b64eb9.png)
 
 没错，Facebook 是存在这样一种限制的。只要你的账号打上了 🇨🇳 的标签，许多服务你是用不了的。
 

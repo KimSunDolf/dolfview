@@ -14,11 +14,11 @@ last_update:
 
 场景：文件夹中夹杂了非常多的异常文件，它们统一带了一个 `._` 前缀，例如：
 
-![](https://one-du.offshoreview.xyz/new-docu/10ae9a3d94016b0a7ade901f221fc49c.png)
+![](https://resource.offshoreview.xyz/new-docu/10ae9a3d94016b0a7ade901f221fc49c.png)
 
 咨询 ChatGPT 后，我得到一个非常好用的 Python 脚本，效果如下：
 
-![](https://one-du.offshoreview.xyz/new-docu/95329660f7410f37a4f87ded4cfcbe2a.png)
+![](https://resource.offshoreview.xyz/new-docu/95329660f7410f37a4f87ded4cfcbe2a.png)
 
 仅需一秒，它就干掉了所有混乱的文件，只留下了我需要的文件。爽！
 
