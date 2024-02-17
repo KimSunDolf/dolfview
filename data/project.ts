@@ -2,7 +2,7 @@ export const projects: Project[] = [
   {
     title: '飞鸟集网络',
     description: '跨越世界，力求稳定。',
-    preview: 'https://one.offshoreview.xyz/docu-work/bee6aba362dc242afbdde538b9b41f01.png',
+    preview: 'https://assets.offshoreview.xyz/zfile/new-docu/docu-work/bee6aba362dc242afbdde538b9b41f01.png',
     website: 'https://www.offshoreview.xyz/',
     source: 'https://github.com/GeekQuerxy/SSPanel-Malio',
     tags: ['design', 'favorite'],
@@ -11,7 +11,7 @@ export const projects: Project[] = [
   {
     title: '飞鸟 Chat',
     description: '回答你的一切问题。',
-    preview: 'https://one.offshoreview.xyz/docu-work/19019c398e53d5e011b179c64452f0ae.png',
+    preview: 'https://assets.offshoreview.xyz/zfile/new-docu/docu-work/19019c398e53d5e011b179c64452f0ae.png',
     website: 'https://ai.offshoreview.xyz/',
     source: 'https://github.com/Yidadaa/ChatGPT-Next-Web',
     tags: ['opensource', 'design', 'favorite'],
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: '3D 网页设计：房间',
     description: '在网页中查看并调整 3D 房间光照参数！',
-    preview: 'https://one.offshoreview.xyz/docu-work/c4338105d6b0b900927c2dc00c85fe73.png',
+    preview: 'https://assets.offshoreview.xyz/zfile/new-docu/docu-work/c4338105d6b0b900927c2dc00c85fe73.png',
     website: 'https://3d-room.offshoreview.xyz/',
     source: 'https://github.com/brunosimon/my-room-in-3d',
     tags: ['opensource', 'design', 'product'],

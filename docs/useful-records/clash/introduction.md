@@ -10,7 +10,7 @@ Clash 是一个非常强大的工具，几乎兼容业内的主流协议。可�
 
 无论你乘坐的是什么航班，Clash 都可以能够帮助你办理任何登机手续。（并且界面更加美观）
 
-![](https://one.offshoreview.xyz/docu-work/b1f97cc673f049dadfffb85af16a354b.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/57bfc5a16b70cfd0ae956ca19f6d69e2.png)
 
 ## 丰富的功能
 
