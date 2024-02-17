@@ -79,6 +79,7 @@ const sidebars = {
   microsoft: [
     'microsoft/introduction',
     'microsoft/e3-msdn-setting',
+    'microsoft/onemanagor',
   ],
   docusaurus: [
     'docusaurus/introduction',

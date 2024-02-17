@@ -47,7 +47,7 @@ Clash 转换平台主要由前端页面和后端服务构成。前端页面主�
 
 来，找到市面上一切转换平台的幕后源头项目，大名鼎鼎的：[CareyWang/sub-web](https://github.com/CareyWang/sub-web)，然后轻轻地点一下右上角的 Fork 按钮，也就是“叉子”的意思，把它“夹”到自己的盘子里！（哈哈，这里的 Fork 是动词形式，专业一点叫分叉，也就是复制一份到自己的仓库里）
 
-![](https://one.offshoreview.xyz/docu-work/clash-dashboard-01.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/docu-work/clash-dashboard-01.png)
 
 ### 修改配置代码
 

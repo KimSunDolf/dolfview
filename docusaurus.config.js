@@ -85,7 +85,7 @@ const config = {
               to: 'docs/ecommerce/facebook',
             },            
             {
-              label: '微软 365',
+              label: '微软相关',
               to: 'docs/microsoft/',
             },
             {
