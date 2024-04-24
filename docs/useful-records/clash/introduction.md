@@ -41,13 +41,13 @@ iOS 上已经有类似 Shadowrocket 和 Surge 这样兼容很多协议的工具�
 
 ## 如何马上开始 Clash 转码？
 
-![](https://resource.offshoreview.xyz/new-docu/110468d6f2310e9978ccef4f0eed7a36.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/110468d6f2310e9978ccef4f0eed7a36.png)
 
 你可以尝试由本站搭建的 [Clash 转码服务](https://clash.offshoreview.xyz/)。不过为了防止信息泄露，我还是建议你自行搭建一个，在 Vercel 前端和 Docker 后端的加持下，搭建门槛已经可以降很多了。
 
 ## 转码后的“漏网之鱼”是什么意思？
 
-![](https://resource.offshoreview.xyz/new-docu/075b63102db8077fce02d34702a372fd.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/075b63102db8077fce02d34702a372fd.png)
 
 Clash 是一个分流策略工具，国外的网站用国外流量，国内的流量就用本地流量。那么 Clash 本质上也是通过内建一个域名清单数据库来进行分类的，记录着主流的国内外网站，依靠正则匹配浏览器的域名进行分流。不过总有一些小众网站是不在这个数据库里的，那么顾名思义这样的网站就叫做“漏网之鱼”了。你可以选择这些小众网站是走国外流量还是本地直连。
 

@@ -3,7 +3,7 @@ id: pay-service
 slug: /apple/pay-service
 title: 如何搞定 Apple 付费服务？
 description: 本文介绍了如何搞定 Apple 付费服务
-image: https://resource.offshoreview.xyz/new-docu/0ab04a1b939e3fb96003e8fe95d5de69.png
+image: https://assets.offshoreview.xyz/zfile/new-docu/0ab04a1b939e3fb96003e8fe95d5de69.png
 last_update:
   date: 2023-07-24 20:53:41
 ---
@@ -63,4 +63,4 @@ Apple One 订阅服务包含的内容和规格汇总如下:
 
 官网定价截图：
 
-![apple-one-price](https://resource.offshoreview.xyz/new-docu/58191ec1bf4a52626e2557953eb64706.png)
+![apple-one-price](https://assets.offshoreview.xyz/zfile/new-docu/58191ec1bf4a52626e2557953eb64706.png)

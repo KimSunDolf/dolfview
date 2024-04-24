@@ -36,7 +36,7 @@ pip install -e .
 
 当你在终端里看到一行行跳跃的代码的时候，说明安装过程已经开始了。看着也还是挺解压的呢！
 
-![](https://resource.offshoreview.xyz/new-docu/c7eb8457094147714a4a7fc435bd0b9d.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/c7eb8457094147714a4a7fc435bd0b9d.png)
 
 不过安装的时候出现了部分依赖报错，换了几个版本也没法解决，就先这样吧，看看后面有没有问题。
 
