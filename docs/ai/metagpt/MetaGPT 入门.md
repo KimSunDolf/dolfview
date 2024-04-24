@@ -15,7 +15,7 @@ last_update:
 
 > 没错，我报名了他们家的免费公开课！（自豪
 
-<img alt="connect-with-notion-2" src="https://resource.offshoreview.xyz/new-docu/a66e0a1fa044088be2638f52667883ba.png" width="200px" />
+<img alt="connect-with-notion-2" src="https://assets.offshoreview.xyz/zfile/new-docu/a66e0a1fa044088be2638f52667883ba.png" width="200px" />
 
 ## MetaGPT 是什么？
 
@@ -64,7 +64,7 @@ MetaGPT 只是**中间件、中间件、中间件**！它不是一个 AI 产品�
 
 ### 实现效果
 
-![](https://resource.offshoreview.xyz/new-docu/8b0ee49ff2281f779de9861a608438ec.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/8b0ee49ff2281f779de9861a608438ec.png)
 
 ## 安装笔记
 

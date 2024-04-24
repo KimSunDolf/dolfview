@@ -187,7 +187,7 @@ const config = {
               to: 'resource',
             },
             {
-              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://resource.offshoreview.xyz/new-docu/c7521504f2cfe2c84b57a8783aa50d8d.png" /></a>`,
+              html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img alt="Built with Docusaurus" style="height:50px;margin-top:0.5rem" src="https://assets.offshoreview.xyz/zfile/new-docu/c7521504f2cfe2c84b57a8783aa50d8d.png" /></a>`,
             },
           ],
         },

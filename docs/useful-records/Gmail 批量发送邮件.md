@@ -18,53 +18,53 @@ last_update:
 
 毫无疑问，要想批量地发送 Gmail 邮件，你肯定得有一个谷歌账号。前往激活[谷歌云](https://console.cloud.google.com/)，然后参考下图，申请开启 [Gmail API](https://console.cloud.google.com/marketplace/product/google/gmail.googleapis.com)。我这里已经申请好了，所以显示的是“管理”，没申请好的账户会提示为“启用”。
 
-![](https://resource.offshoreview.xyz/new-docu/4996048296331df8ad64eec0eb9836be.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/4996048296331df8ad64eec0eb9836be.png)
 
 ## 赋予开发者应用权限
 
 光获取 API Key 还不够，受制于谷歌的数据安全策略，要想愉快调用 API，需要开发者创建好 API 秘钥、申请 OAuth 2.0 客户端以及配置“同意屏幕”。
 
-![](https://resource.offshoreview.xyz/new-docu/0ce3702492b26ad43dfc63f79b9a5232.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/0ce3702492b26ad43dfc63f79b9a5232.png)
 
 ### 配置同意屏幕
 
 我们先从最简单的配置同意屏幕开始，这里选“外部”。
 
-![](https://resource.offshoreview.xyz/new-docu/ed806cb2a4d0a2678181a0806e87d24c.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/ed806cb2a4d0a2678181a0806e87d24c.png)
 
 按照提示填写要求的必填内容，最后点击“保存并继续”。
 
-![](https://resource.offshoreview.xyz/new-docu/d950c1c3c96ec3b8f161300427d661c0.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/d950c1c3c96ec3b8f161300427d661c0.png)
 
 把自己加到这个应用的测试用户中。
 
-![](https://resource.offshoreview.xyz/new-docu/4ad0a0b77dac1745b5dba002d7824aef.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/4ad0a0b77dac1745b5dba002d7824aef.png)
 
 ### 创建 API 秘钥
 
 点击页面上的创建 “API 秘钥”。
 
-![](https://resource.offshoreview.xyz/new-docu/3538b2d4049a0d89e3b3f6d3c98bf586.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/3538b2d4049a0d89e3b3f6d3c98bf586.png)
 
 然后牢记你的 API Key，同时建议缩小这个 Key 的功能适用范围，避免被滥用。比如说只用于 Gmail API 的调用。
 
-![](https://resource.offshoreview.xyz/new-docu/928ea8b10330dc7edb70d39efcbe8d8e.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/928ea8b10330dc7edb70d39efcbe8d8e.png)
 
 ### 创建 OAuth 客户端 ID
 
 点击页面上的创建 “OAuth 客户端 ID”。
 
-![](https://resource.offshoreview.xyz/new-docu/6b8e56ce38c558d474e49a33066f3787.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/6b8e56ce38c558d474e49a33066f3787.png)
 
 引用类型选择 Web 应用即可。已获授权重定向 URL 填写为 `http://localhost:8080/`
 
-![](https://resource.offshoreview.xyz/new-docu/ad24bbf9fcd74da0a1bb76d98cd2b344.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/ad24bbf9fcd74da0a1bb76d98cd2b344.png)
 
 ## 下载凭据 Json
 
 这一切都完成后，谷歌会给你一个凭据表，这里我们点击“下载 JSON”，把文件保存到一个文件夹中。
 
-![](https://resource.offshoreview.xyz/new-docu/f8959ab7eb08879e1a518f9e707be5cc.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/f8959ab7eb08879e1a518f9e707be5cc.png)
 
 ## 创建邮件项目
 
@@ -250,6 +250,6 @@ your@gmail.com,
 
 运行代码后，会自动弹出浏览器，选择你的谷歌账号。
 
-![](https://resource.offshoreview.xyz/new-docu/c3de0c24bbe5fde47ee9ce74c1c963bb.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/c3de0c24bbe5fde47ee9ce74c1c963bb.png)
 
 然后接下来就是无脑登录和授权。如果没有什么意外的话程序就可以按照你给的邮箱地址逐个发送邮件了。最好先把目标邮箱地址换成自己的，先测试邮件的样式是否符合预期，没有问题后再换成客户的邮箱。

@@ -3,7 +3,7 @@ id: register-apple-id
 slug: /apple/register-apple-id
 title: 如何注册一个外区 Apple 账号？
 description: 本文介绍了如何注册一个外区 Apple 账号
-image: https://resource.offshoreview.xyz/new-docu/0ab04a1b939e3fb96003e8fe95d5de69.png
+image: https://assets.offshoreview.xyz/zfile/new-docu/0ab04a1b939e3fb96003e8fe95d5de69.png
 last_update: 
   date: 2023-07-19 22:10:51
 ---
@@ -24,7 +24,7 @@ last_update:
 
 苹果外区账号注册门槛并不高，因为你可以很方便的打开苹果账号的[注册网站](https://appleid.apple.com/#!&page=signin)。点击右上角的“建立你的 Apple ID”。
 
-![](https://resource.offshoreview.xyz/new-docu/8fa5859e692f6203a5b5dcb5ecff9e1c.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/8fa5859e692f6203a5b5dcb5ecff9e1c.png)
 
 然后按照页面提示填写对应的信息就好，地区一定要选为你想要的区域。如果你想要体验最丰富曲库的 Apple Music，那么建议选择美国区。如果你想要体验中文介绍页的 Apple TV+，那么建议选择香港。
 
@@ -32,7 +32,7 @@ last_update:
 邮箱和手机号的填写非常重要，因为后续你可能需要通过邮箱或者手机号进行账号的找回，所以要填一个自己长期使用的真实邮箱。
 :::
 
-![](https://resource.offshoreview.xyz/new-docu/0cc1a7dac0fe608d1d17bc5dae5668d3.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/0cc1a7dac0fe608d1d17bc5dae5668d3.png)
 
 
 :::info
@@ -45,6 +45,6 @@ last_update:
 
 为了确保账号的所在区域，我们还需要进入 Apple ID [管理后台](https://appleid.apple.com/sign-in)进行确认。
 
-![](https://resource.offshoreview.xyz/new-docu/205aca7aaeebc52f3698664f01810880.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/205aca7aaeebc52f3698664f01810880.png)
 
 管理后台显示的区域就是你的账号区域，这决定你能够使用哪些服务，所以一定要确认清楚。

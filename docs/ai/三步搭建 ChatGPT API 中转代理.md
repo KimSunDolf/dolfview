@@ -36,7 +36,7 @@ ChatGPT 是最近非常罕见的一个“双向封锁”的超级应用，即它
 
 点击 [Cloudflare](https://www.cloudflare.com/)，注册一个账号，然后将自己的域名托管至 Cloudflare。这个步骤比较简单，按照 Cloudflare 的页面提示照做即可，不再赘述。
 
-![](https://resource.offshoreview.xyz/new-docu/a754271ef79fc8facc3ad5c6d03b2b23.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/a754271ef79fc8facc3ad5c6d03b2b23.png)
 
 ## 2. 创建 Workers
 
@@ -44,17 +44,17 @@ ChatGPT 是最近非常罕见的一个“双向封锁”的超级应用，即它
 
 回到 CF 首页，点击“创建 Worker”。CF 居然没有提供自定义选项，必须选择它的模板，所以可以先直接选择 Hello Word 模板，然后再编辑里面的代码。
 
-![](https://resource.offshoreview.xyz/new-docu/04af59a6ee6821eb651b12c59fb4ab5b.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/04af59a6ee6821eb651b12c59fb4ab5b.png)
 
 进去后直接点击“部署”按钮。
 
-![](https://resource.offshoreview.xyz/new-docu/d909f62f4b69e2a485b5cfd4a906404d.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/d909f62f4b69e2a485b5cfd4a906404d.png)
 
 ### 修改 Workers 代码
 
 创建完成后需要进去修改代码，修改这部分代码：
 
-![](https://resource.offshoreview.xyz/new-docu/4990fd9d9e218672d622d1064f4e45c4.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/4990fd9d9e218672d622d1064f4e45c4.png)
 
 修改为以下代码：
 
@@ -83,29 +83,29 @@ async function handleRequest(request) {
 
 修改完之后不着急发送请求，直接点击右上角的“保存并部署”按钮。然后顺便重命名下这个 Workers。
 
-![](https://resource.offshoreview.xyz/new-docu/14d7b3417003801f0e13bf9bc4e3b6e9.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/14d7b3417003801f0e13bf9bc4e3b6e9.png)
 
-![](https://resource.offshoreview.xyz/new-docu/9a261cc93b580f6ff918e3dd1a689fa1.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/9a261cc93b580f6ff918e3dd1a689fa1.png)
 
 ## 3. 绑定域名
 
 Workers 创建好之后，前往你刚刚添加的那个域名。点击左侧菜单栏中的 “Workers 路由”，然后点击“添加路由”。
 
-![](https://resource.offshoreview.xyz/new-docu/424c34d137d74a7bee4dc7697e9974a6.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/424c34d137d74a7bee4dc7697e9974a6.png)
 
 现在为你的代理链接想一个名字，比如说我这里想要以 `gptapi.wsyfin.com` 网址作为我的代理链接，那么我就在路由中输入 `gptapi.wsyfin.com/*`，然后选择刚刚创建的 Workers，点击“保存”按钮。
 
-![](https://resource.offshoreview.xyz/new-docu/b888d6f8d8018de1021856e2ba83939e.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/b888d6f8d8018de1021856e2ba83939e.png)
 
 最后再在 DNS 中添加这个地址，A 类型，内容写为 `2.2.2.2`，打开小云朵，点击保存即可。
 
-![](https://resource.offshoreview.xyz/new-docu/5d52630bd6e7182f7845097a3bc57d15.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/5d52630bd6e7182f7845097a3bc57d15.png)
 
 ## 验证请求是否成功
 
 现在你可以使用你的域名来请求 GPT API 了，比如说我这里使用 `https://gptapi.wsyfin.com/v1/chat/completions` 来请求 GPT API，如果返回了以下内容，那么就说明你的代理已经搭建成功了。
 
-![](https://resource.offshoreview.xyz/new-docu/a6b26c74430aaee4ee5d8aa517650970.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/a6b26c74430aaee4ee5d8aa517650970.png)
 
 等等，这是个报错信息呀！但是这个报错说明已经能够正确连接到 GPT 的官方 API 服务地址了，但是还需要输入一个 API Key 才能够让 GPT 解答我们的问题。现在在终端里输以下个命令，把 `Bearer` 后面的 `sk-xxxx` 替换成自己的 API Key 就可以正确得到返回结果啦。
 
@@ -122,6 +122,6 @@ curl --location 'https://gptapi.wsyfin.com/v1/chat/completions' \
 
 来欣赏下 GPT3.5 是怎么糊弄我们的 🔽：
 
-![](https://resource.offshoreview.xyz/new-docu/a5871325bd34bab6a8bf02f566a7a666.png)
+![](https://assets.offshoreview.xyz/zfile/new-docu/a5871325bd34bab6a8bf02f566a7a666.png)
 
 
