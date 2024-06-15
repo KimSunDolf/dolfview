@@ -50,14 +50,14 @@ function Hero() {
     <animated.div className={styles.hero}>
       <div className={styles.bloghome__intro}>
         <animated.div style={trails[0]} className={styles.hero_text}>
-          <Translate id="homepage.hero.greet">欢迎使用</Translate>
+          <Translate id="homepage.hero.greet">欢迎来到</Translate>
           <span className={styles.intro__name}>
-            <Translate id="homepage.hero.name">道孚站</Translate>
+            <Translate id="homepage.hero.name">小举人</Translate>
           </span>
         </animated.div>
         <animated.p style={trails[1]}>
           <Translate id="homepage.hero.text">
-            {`道孚站是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的资料集合站。`}
+            {`小举人是一个涵盖网络服务、网站建设、企业邮箱服务、奇思妙想小工具的分享自留地。`}
           </Translate>
           <br />
           {/* <Translate

@@ -5,18 +5,18 @@ const announcementBarContent = `🎉 欢迎来到道孚站！ <a href="https://w
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '道孚站',
+  title: '小举人',
   titleDelimiter: '-',
-  url: 'https://wsyfin.com',//请填写你的网站
+  url: 'https://blog.gizmighty.com',//请填写你的网站
   baseUrl: '/',//建议填写/
-  favicon: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
+  favicon: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
   organizationName: '',
   projectName: 'dolf-vew',
-  tagline: '道孚站',
+  tagline: '程序 · 观点 · 搞钱',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
-    image: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
+    image: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
     announcementBar: {
        id: 'announcementBar-3',
       content: announcementBarContent,
@@ -52,11 +52,11 @@ const config = {
       },
     },
     navbar: {
-      title: '道孚站',
+      title: '小举人',
       logo: {
-        alt: 'Dolf',
-        src: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',
-        srcDark: 'https://pan.wsyfin.com/f/BB1T8/modified-white-new.ico',//记得加上绝对路径/
+        alt: 'GizMighty',
+        src: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
+        srcDark: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
