@@ -30,6 +30,7 @@ const sidebars = {
     },
     'useful-records/djsk',
     'useful-records/gmail-api',
+    'useful-records/multi-ssh',
     {
       // label: 'Docusaurus',
       // type: 'category',
