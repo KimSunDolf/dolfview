@@ -8,7 +8,7 @@ title: 如何在同一个机器上新建多个 SSH 并与 Github 连接
 
 当你存在多个 Github 账号时（个人/工作），而本机上又只有一个 SSH 密钥对时。例如在早期的时候为了拉取公司项目，先生成了一个 SSH 密钥对，然后将它添加到了公司 Github 账号里。后面想重新拉回个人账号下的代码仓库时，想将同一个 SSH 密钥提交到个人的 Github 账号里，却发现它会报这个提示：`Key is already in use`。
 
-![](https://r2.offshoreview.xyz/2024/09/25b5f6fa9c131f041572b5f62b94d5c0.png)
+![](https://r2.xmsex.net/2024/09/25b5f6fa9c131f041572b5f62b94d5c0.png)
 
 ## 原因与解决办法
 

@@ -9,14 +9,14 @@ const config = {
   titleDelimiter: '-',
   url: 'https://blog.gizmighty.com',//请填写你的网站
   baseUrl: '/',//建议填写/
-  favicon: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
+  favicon: 'https://r2.xmsex.net/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
   organizationName: '',
   projectName: 'dolf-vew',
   tagline: '程序 · 观点 · 搞钱',
   onBrokenLinks: 'ignore',  //忽略坏链
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
-    image: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
+    image: 'https://r2.xmsex.net/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
     announcementBar: {
        id: 'announcementBar-3',
       content: announcementBarContent,
@@ -55,8 +55,8 @@ const config = {
       title: '小举人',
       logo: {
         alt: 'GizMighty',
-        src: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
-        srcDark: 'https://r2.offshoreview.xyz/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',//记得加上绝对路径/
+        src: 'https://r2.xmsex.net/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',
+        srcDark: 'https://r2.xmsex.net/docu/2024/06/13108941d46a8957f005bfe16a2404e6.png',//记得加上绝对路径/
       },
       hideOnScroll: false,
       items: [
